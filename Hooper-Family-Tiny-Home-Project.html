@@ -1,0 +1,1169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Secure the Foundation — Hooper Family Land Project, Navassa NC</title>
+<style>
+  *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:'Segoe UI',-apple-system,BlinkMacSystemFont,sans-serif;background:#f5f0eb;color:#2c2c2c;line-height:1.7;font-size:17px}
+
+  .hero{background:linear-gradient(135deg,#2d4a3e 0%,#1a3a2a 100%);color:#fff;padding:48px 24px 40px;text-align:center}
+  .hero h1{font-size:2rem;font-weight:700;letter-spacing:.5px;margin-bottom:8px}
+  .hero .subtitle{font-size:1.1rem;opacity:.85;font-weight:400;max-width:600px;margin:0 auto}
+  .hero .update-date{margin-top:16px;font-size:.85rem;opacity:.6}
+
+  .alert-banner{background:#fff3e0;border-bottom:2px solid #f0a830;padding:14px 24px;text-align:center;font-size:.95rem;color:#7a5200;font-weight:600}
+
+  .nav-bar{background:#fff;border-bottom:2px solid #e0d8cf;position:sticky;top:0;z-index:100;display:flex;justify-content:center;flex-wrap:wrap;gap:4px;padding:12px 16px}
+  .nav-bar a{text-decoration:none;color:#2d4a3e;font-weight:600;font-size:.85rem;padding:8px 14px;border-radius:24px;transition:background .2s}
+  .nav-bar a:hover,.nav-bar a:focus{background:#e8f0eb}
+
+  .container{max-width:880px;margin:0 auto;padding:0 20px 60px}
+
+  .section{margin-top:48px}
+  .section-header{background:#2d4a3e;color:#fff;padding:20px 28px;border-radius:12px 12px 0 0;font-size:1.3rem;font-weight:700}
+  .section-body{background:#fff;border:1px solid #e0d8cf;border-top:none;border-radius:0 0 12px 12px;padding:28px}
+
+  .info-card{background:#fafaf7;border-left:4px solid #5a8f6e;border-radius:0 8px 8px 0;padding:20px 24px;margin-bottom:20px}
+  .info-card h3{font-size:1.05rem;color:#2d4a3e;margin-bottom:8px;font-weight:700}
+  .info-card p,.info-card li{font-size:.97rem;color:#444}
+  .info-card ul{margin-top:8px;padding-left:20px}
+  .info-card li{margin-bottom:6px}
+  .info-card.warning{border-left-color:#e6a817;background:#fffdf5}
+  .info-card.grant{border-left-color:#3b7dd8;background:#f5f8ff}
+
+  .highlight{background:#e8f5ee;border:2px solid #5a8f6e;border-radius:10px;padding:20px 24px;margin:24px 0;text-align:center}
+  .highlight .label{font-size:.78rem;font-weight:700;text-transform:uppercase;letter-spacing:1.5px;color:#2d4a3e;margin-bottom:6px}
+  .highlight p{font-size:1.05rem;color:#2d4a3e;font-weight:600}
+
+  .stat-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:16px;margin:20px 0}
+  .stat-card{background:#fff;border:2px solid #5a8f6e;border-radius:10px;padding:20px;text-align:center}
+  .stat-card .number{font-size:1.6rem;font-weight:700;color:#2d4a3e}
+  .stat-card .label{font-size:.8rem;color:#666;margin-top:4px}
+
+  .cost-table{width:100%;border-collapse:collapse;margin:16px 0;font-size:.93rem}
+  .cost-table th{background:#2d4a3e;color:#fff;padding:12px 14px;text-align:left;font-weight:600}
+  .cost-table td{padding:12px 14px;border-bottom:1px solid #e8e2da}
+  .cost-table tr:nth-child(even) td{background:#fafaf7}
+  .cost-table .total-row td{font-weight:700;background:#e8f5ee;border-top:2px solid #5a8f6e}
+  .cost-table .subtotal-row td{font-weight:600;background:#f0ede8;border-top:1px solid #c4b9ac}
+
+  .investor-table{width:100%;border-collapse:collapse;margin:16px 0;font-size:.95rem}
+  .investor-table th{background:#5a8f6e;color:#fff;padding:10px 14px;text-align:left;font-weight:600}
+  .investor-table td{padding:10px 14px;border-bottom:1px solid #e8e2da}
+  .investor-table tr:nth-child(even) td{background:#f7faf8}
+  .investor-table .pool-row td{font-weight:700;background:#e8f5ee;border-top:2px solid #5a8f6e;font-size:1rem}
+
+  .scenario-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(340px,1fr));gap:24px;margin:20px 0}
+  .scenario-card{border:3px solid #e0d8cf;border-radius:14px;padding:28px;background:#fff;transition:border-color .2s}
+  .scenario-card:hover{border-color:#5a8f6e}
+  .scenario-card .scenario-tag{display:inline-block;background:#2d4a3e;color:#fff;font-size:.78rem;font-weight:700;padding:5px 16px;border-radius:20px;margin-bottom:14px;letter-spacing:.5px}
+  .scenario-card .scenario-tag.b{background:#8b6914}
+  .scenario-card h3{font-size:1.15rem;color:#2d4a3e;margin-bottom:8px}
+  .scenario-card .price-range{font-size:1.1rem;color:#5a8f6e;font-weight:700;margin-bottom:12px}
+  .scenario-card p{font-size:.93rem;color:#555;margin-bottom:10px}
+  .scenario-card ul{padding-left:18px;font-size:.9rem;color:#555}
+  .scenario-card li{margin-bottom:5px}
+
+  .lot-card{border:2px dashed #c4b9ac;border-radius:12px;padding:24px;margin-bottom:20px;background:#fff}
+  .lot-card.active{border-color:#5a8f6e;border-style:solid}
+  .lot-card h3{font-size:1.1rem;color:#2d4a3e;margin-bottom:4px}
+  .lot-card .address{font-size:1rem;color:#666;margin-bottom:12px}
+  .lot-card .address.filled{color:#2d4a3e;font-weight:600}
+  .lot-status{display:inline-block;padding:4px 14px;border-radius:20px;font-size:.8rem;font-weight:600}
+  .status-confirmed{background:#e8f5ee;color:#2d6b3f}
+  .status-pending{background:#fff3e0;color:#b57a1b}
+
+  .layout-diagram{background:#f0ede8;border-radius:12px;padding:28px;margin:20px 0;text-align:center}
+  .layout-diagram h4{color:#2d4a3e;margin-bottom:16px;font-size:1rem}
+  .layout-visual{display:flex;gap:20px;justify-content:center;flex-wrap:wrap}
+  .lot-box{border:2px solid #5a8f6e;border-radius:10px;padding:16px;background:#fff;min-width:200px;flex:1;max-width:380px}
+  .lot-box h5{color:#2d4a3e;font-size:.95rem;margin-bottom:10px;padding-bottom:6px;border-bottom:1px solid #e0d8cf}
+  .unit-row{display:flex;gap:8px;justify-content:center;margin-bottom:8px}
+  .unit{background:#5a8f6e;color:#fff;padding:8px 12px;border-radius:8px;font-size:.78rem;font-weight:600;flex:1;text-align:center}
+  .unit.home{background:#2d4a3e}
+  .courtyard-box{background:#e8f5ee;border:2px dashed #5a8f6e;border-radius:8px;padding:10px;margin-top:8px;font-size:.82rem;color:#2d4a3e;font-weight:600}
+
+  .builder-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px;margin-top:16px}
+  .builder-card{background:#fafaf7;border:1px solid #e0d8cf;border-radius:10px;padding:20px}
+  .builder-card h4{font-size:1rem;color:#2d4a3e;margin-bottom:4px}
+  .builder-card .price{font-size:.9rem;color:#5a8f6e;font-weight:700;margin-bottom:8px}
+  .builder-card p{font-size:.88rem;color:#666}
+
+  .phase{position:relative;padding-left:36px;margin-bottom:28px}
+  .phase::before{content:'';position:absolute;left:12px;top:36px;bottom:-28px;width:2px;background:#c4b9ac}
+  .phase:last-child::before{display:none}
+  .phase-dot{position:absolute;left:4px;top:6px;width:18px;height:18px;border-radius:50%;background:#5a8f6e;border:3px solid #fff;box-shadow:0 0 0 2px #5a8f6e}
+  .phase-dot.future{background:#fff;border:3px solid #c4b9ac;box-shadow:0 0 0 2px #c4b9ac}
+  .phase h3{font-size:1.05rem;color:#2d4a3e;margin-bottom:4px}
+  .phase .timeframe{font-size:.82rem;color:#888;font-weight:600;margin-bottom:6px}
+  .phase p{font-size:.95rem;color:#555}
+
+  .contact-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px;margin-top:16px}
+  .contact-card{background:#fafaf7;border-radius:10px;padding:18px 20px;border:1px solid #e0d8cf}
+  .contact-card h4{font-size:.95rem;color:#2d4a3e;margin-bottom:6px}
+  .contact-card p{font-size:.9rem;color:#555;margin-bottom:2px}
+
+  .footer{text-align:center;padding:32px 20px;font-size:.82rem;color:#999;border-top:1px solid #e0d8cf;margin-top:48px}
+
+  .quick-links{display:flex;gap:10px;justify-content:center;padding:14px 16px;flex-wrap:wrap}
+  .quick-link{display:inline-flex;align-items:center;gap:6px;background:#2d4a3e;color:#fff;text-decoration:none;padding:12px 20px;border-radius:28px;font-size:.9rem;font-weight:600;transition:background .2s;min-height:48px}
+  .quick-link:hover,.quick-link:active{background:#5a8f6e}
+  .quick-link.alert-link{background:#b57a1b}
+  .quick-link.alert-link:hover,.quick-link.alert-link:active{background:#d49520}
+
+  .glossary-term{background:#f0ede8;border-radius:6px;padding:2px 8px;font-weight:600;color:#2d4a3e;font-size:.92rem;white-space:nowrap}
+
+  .owner-tag{display:inline-block;padding:3px 10px;border-radius:14px;font-size:.78rem;font-weight:700;letter-spacing:.3px}
+  .owner-tyra{background:#e8f5ee;color:#2d6b3f}
+  .owner-tony{background:#dff0e6;color:#1a5c30}
+  .owner-tianna{background:#e8ecf5;color:#3b5998}
+  .owner-anthony{background:#dde5f5;color:#2c4a8a}
+  .owner-darnell{background:#f5efe8;color:#8b6914}
+  .owner-diane{background:#f5ede0;color:#7a5c10}
+  .owner-branch1{background:#e8f5ee;color:#2d6b3f}
+  .owner-branch2{background:#e8ecf5;color:#3b5998}
+  .owner-all{background:#f0e8f5;color:#6b4c8a}
+  .owner-alicia{background:#d9f2e0;color:#1e7a3a}
+  .owner-onsite{background:#fff3e0;color:#b57a1b}
+
+  .meeting-card{background:#fff;border:3px solid #5a8f6e;border-radius:14px;padding:20px 24px;margin-bottom:16px}
+  .meeting-card h3{font-size:1.05rem;color:#2d4a3e;margin-bottom:6px}
+  .meeting-card .date{font-size:1.2rem;font-weight:700;color:#5a8f6e;margin-bottom:8px}
+  .meeting-card p{font-size:.93rem;color:#555}
+
+  .resource-link{display:block;background:#fafaf7;border:1px solid #e0d8cf;border-radius:8px;padding:14px 18px;margin-bottom:8px;text-decoration:none;color:#2d4a3e;font-size:.93rem;transition:border-color .2s}
+  .resource-link:hover,.resource-link:active{border-color:#5a8f6e;background:#f7faf8}
+  .resource-link strong{display:block;font-size:.97rem;margin-bottom:2px}
+  .resource-link span{color:#5a8f6e;font-size:.85rem;word-break:break-all}
+
+  @media print{.nav-bar,.alert-banner,.quick-links{display:none}.hero{padding:24px}body{font-size:14px}}
+  @media(max-width:600px){
+    body{font-size:16px;-webkit-text-size-adjust:100%}
+    .hero h1{font-size:1.5rem}
+    .hero .subtitle{font-size:1rem}
+    .section-header{font-size:1.1rem;padding:16px 20px}
+    .section-body{padding:20px 16px}
+    .cost-table{font-size:.83rem;display:block;overflow-x:auto;-webkit-overflow-scrolling:touch}
+    .cost-table th,.cost-table td{padding:10px 10px;min-width:90px}
+    .investor-table{font-size:.85rem;display:block;overflow-x:auto;-webkit-overflow-scrolling:touch}
+    .layout-visual{flex-direction:column;align-items:center}
+    .lot-box{max-width:100%}
+    .scenario-grid{grid-template-columns:1fr}
+    .stat-grid{grid-template-columns:repeat(2,1fr)}
+    .stat-card{padding:14px 10px}
+    .stat-card .number{font-size:1.3rem}
+    .nav-bar{gap:2px;padding:10px 12px}
+    .nav-bar a{padding:8px 10px;font-size:.8rem}
+    .quick-link{padding:14px 18px;font-size:.88rem;flex:1;justify-content:center;min-width:140px}
+    .info-card{padding:16px 18px}
+    .builder-grid{grid-template-columns:1fr}
+    .contact-grid{grid-template-columns:1fr}
+    .meeting-card{padding:16px 18px}
+    .resource-link{padding:12px 14px}
+  }
+</style>
+</head>
+<body>
+
+<!-- ═══════════ HERO ═══════════ -->
+<div class="hero">
+  <h1>Secure the Foundation</h1>
+  <p class="subtitle">A plan for our family's land — Navassa, NC</p>
+  <p style="max-width:640px;margin:16px auto 0;font-size:.95rem;opacity:.8;line-height:1.6;">This page puts everything in one place so we're all looking at the same information. Nobody in this family is a real estate developer — but the research has been done. Some of what's here is solid. Some of it we'll need a lawyer or lender to confirm. This land is ours. What we do with it should make sense for everyone and last longer than any of us.</p>
+  <p style="max-width:540px;margin:20px auto 0;font-size:.9rem;opacity:.7;line-height:1.5;font-style:italic;border-top:1px solid rgba(255,255,255,.15);padding-top:14px;">In honor of <strong style="opacity:1;">Lillie Bell Hooper</strong> — mother of Darnell, grandmother of Tyra, Tony, and Tianna. The land we're building on and the LLC that carries her name exist because of what she started. Everything here is for her and the generations that come after.</p>
+  <p class="update-date">Last updated: April 9, 2026</p>
+</div>
+
+<!-- ═══════════ ALERT ═══════════ -->
+<div class="alert-banner" id="hearing">
+  ACTION REQUIRED — Navassa CDBG Public Hearing: <strong>April 16, 2026 at 7:30 PM</strong> at Town Hall (334 Main St, Navassa). Attend and advocate for infrastructure on Navassa Road. <a href="#grants" style="color:#7a5200;text-decoration:underline;">See our approach →</a>
+</div>
+
+<!-- ═══════════ QUICK TAP ═══════════ -->
+<div class="quick-links">
+  <a class="quick-link alert-link" href="#hearing">📅 April 16 Hearing</a>
+  <a class="quick-link" href="#grants">💰 Grant Strategy</a>
+  <a class="quick-link" href="#meetings">👥 Family Meetings</a>
+  <a class="quick-link" href="#glossary">📖 What Terms Mean</a>
+</div>
+
+<!-- ═══════════ NAV ═══════════ -->
+<div class="nav-bar">
+  <a href="#opportunity">📊 Opportunity</a>
+  <a href="#scenarios">🔀 Two Paths</a>
+  <a href="#lots">📍 Lots</a>
+  <a href="#invest">💵 Investment</a>
+  <a href="#grants">🏛️ Grants</a>
+  <a href="#rules">⚖️ Zoning</a>
+  <a href="#plan">✅ Action Plan</a>
+  <a href="#glossary">📖 Glossary</a>
+  <a href="#contacts">📞 Contacts</a>
+</div>
+
+<div class="container">
+
+<!-- ═══════════ THE OPPORTUNITY ═══════════ -->
+<div class="section" id="opportunity">
+  <div class="section-header">📊 What the Research Shows — The Housing Gap Is Real</div>
+  <div class="section-body">
+    <p style="margin-bottom:20px;">The question was simple: could our family's land support something that makes money and lasts? The research came back strong. Brunswick County is the <a href="https://www.census.gov/quickfacts/brunswickcountynorthcarolina" target="_blank" style="color:#5a8f6e;">fastest-growing county in North Carolina</a>, there's a <a href="https://www.commerce.nc.gov/data-tools-reports/economic-development-reports" target="_blank" style="color:#5a8f6e;">documented housing shortage</a>, and there's almost nothing available for working professionals who need furnished rentals inland. These are the numbers:</p>
+
+    <div class="stat-grid">
+      <div class="stat-card">
+        <div class="number">🏠 15,400+</div>
+        <div class="label">Housing unit gap in Brunswick County</div>
+      </div>
+      <div class="stat-card">
+        <div class="number">📉 1.0%</div>
+        <div class="label">Rental vacancy rate (healthy = 4-6%)</div>
+      </div>
+      <div class="stat-card">
+        <div class="number">📈 24%</div>
+        <div class="label">Brunswick County population growth (2020-2024)</div>
+      </div>
+      <div class="stat-card">
+        <div class="number">🔍 Near Zero</div>
+        <div class="label">Furnished rentals for working professionals inland from the coast</div>
+      </div>
+    </div>
+
+    <div class="info-card">
+      <h3>🎯 Who Would Actually Rent From Us</h3>
+      <ul>
+        <li>🏥 <strong>Traveling nurses &amp; medical professionals</strong> — 96+ open travel nurse positions in Wilmington. <a href="https://www.nhrmc.org" target="_blank" style="color:#5a8f6e;">New Hanover Regional Medical Center</a> and <a href="https://www.novanthealthbrunswickmedicalcenter.org" target="_blank" style="color:#5a8f6e;">Novant Health Brunswick</a> are nearby. Travel nurses get $1,800–$3,000/month housing stipends and need furnished units on 13-week contracts.</li>
+        <li>🎖️ <strong>Military personnel &amp; contractors</strong> — <a href="https://www.lejeune.marines.mil" target="_blank" style="color:#5a8f6e;">Camp Lejeune</a> is just 4 miles from Navassa. Service members on TDY orders, defense contractors on short-term assignments, and transitioning personnel need quality furnished housing.</li>
+        <li>🏢 <strong>Corporate relocations</strong> — Leland Innovation Park (131+ acres of life-science/medical employers) is driving corporate relocations. Leland population grew 44% since 2020.</li>
+        <li>🧳 <strong>Government &amp; contractor teams</strong> — FEMA, infrastructure projects, and federal contractors need furnished housing for 30-90 day deployments. No hotels or extended stays in inland Brunswick County.</li>
+      </ul>
+    </div>
+
+    <div class="highlight">
+      <div class="label">What This Comes Down To</div>
+      <p>We already own the land. People who work in this area need somewhere to live. The county is short 15,000 housing units. We can build something that serves this community and pays our family back — on land that's already ours.</p>
+    </div>
+
+    <div class="info-card">
+      <h3>🏷️ Something Worth Knowing — The Words Matter</h3>
+      <p>These are the same quality tiny homes no matter what we call them. But calling them "workforce housing" changes what kind of help becomes available. Vacation rentals get zero public support. But housing for traveling nurses, first responders, and working professionals? That qualifies for grants, 0% interest loans, tax incentives, and town support. This isn't about playing a game with language — it's about describing the project honestly. And the honest description happens to be the one that opens doors.</p>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════ TWO SCENARIOS ═══════════ -->
+<div class="section" id="scenarios">
+  <div class="section-header">🔀 Two Paths Forward — Honest Numbers</div>
+  <div class="section-body">
+    <p style="margin-bottom:20px;">The numbers have been worked two different ways. Scenario A can start now — no rezoning, no special permission needed beyond what the law already gives us. Scenario B is bigger but takes longer and requires the town to approve a zoning change. Both are real options. The family decides together which path feels right.</p>
+
+    <div class="scenario-grid">
+      <div class="scenario-card">
+        <span class="scenario-tag">SCENARIO A — START NOW</span>
+        <h3>4 Units + Event Courtyard, Family On-Site Manager, FHA Financing</h3>
+        <div class="price-range">Total build: $414K – $636K</div>
+        <p>4 tiny homes across our 2 lots (2 per lot) with a shared event courtyard. One family member lives on-site for at least a year — this is what unlocks FHA financing at 3.5% down, with the land as our equity. That person also manages the property and event bookings. The other 3 units rent to working professionals. The courtyard books events from day one.</p>
+        <ul>
+          <li>✅ <strong>No rezoning needed</strong> — SB 495 allows 1 primary + 1 ADU per lot</li>
+          <li>🏦 <strong>FHA financing</strong> — 3.5% down, 30-year term, 6.5% rate</li>
+          <li>🏡 <strong>Land as down payment</strong> — no large cash outlay</li>
+          <li>🎪 <strong>Event courtyard</strong> — intimate venue for 20-60 guests (corporate retreats, promotion ceremonies, photo shoots, private celebrations)</li>
+          <li>🛏️ <strong>Venue + lodging combo</strong> — event attendees can book any available units on-site. Events use the courtyard while rental tenants keep their homes — no conflict.</li>
+          <li>💵 <strong>3 rental units</strong> at $1,800–$2,200/month (travel nurse rates)</li>
+          <li>🔓 <strong>After 12 months:</strong> Tianna + Anthony can move out and rent all 4</li>
+        </ul>
+      </div>
+
+      <div class="scenario-card">
+        <span class="scenario-tag b">SCENARIO B — PHASE TO 6 UNITS</span>
+        <h3>Build 2 First, Prove It, Expand to 6</h3>
+        <div class="price-range">Phase 1: $200K – $300K → Full build: $656K – $864K</div>
+        <p>Start with 2 units on one lot (no rezoning). Prove the concept for 6–12 months with rental income. Then pursue rezoning and build 4 more units with commercial financing backed by proven revenue.</p>
+        <ul>
+          <li>1️⃣ <strong>Phase 1:</strong> 2 units under SB 495 on Lot 1. Family member on-site in one, 1 rental.</li>
+          <li>2️⃣ <strong>Phase 2 (month 12+):</strong> Pursue rezoning to multi-family</li>
+          <li>3️⃣ <strong>Phase 3:</strong> Build 4 more units with commercial loan (proven income helps)</li>
+          <li>💵 <strong>All 5 rental units</strong> as workforce housing</li>
+          <li>⏳ <strong>Rezoning takes 6–12 months</strong> — not guaranteed</li>
+          <li>🏦 <strong>Commercial financing:</strong> 20-25% down, higher rates (~7.5%)</li>
+          <li>🎪 <strong>Event courtyard</strong> added in Phase 3 with larger lot development</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- SCENARIO A NUMBERS -->
+    <h3 style="margin:32px 0 12px;color:#2d4a3e;">Scenario A Numbers — 4 Units + Event Courtyard (3 Rentals + On-Site Manager Unit)</h3>
+    <table class="cost-table">
+      <thead><tr><th>Revenue Source</th><th>Conservative</th><th>Strong</th></tr></thead>
+      <tbody>
+        <tr><td>3 units — travel nurse housing @ $1,800–$2,200/mo, 11 mo/yr</td><td>$59,400</td><td>$72,600</td></tr>
+        <tr><td>Event courtyard — 15-25 intimate events/yr @ $500–$2,500</td><td>$12,000</td><td>$35,000</td></tr>
+        <tr><td>Photo shoots &amp; styled sessions — 10-20/yr @ $200–$250</td><td>$2,000</td><td>$5,000</td></tr>
+        <tr><td><strong>Gross Annual Revenue</strong></td><td><strong>$73,400</strong></td><td><strong>$112,600</strong></td></tr>
+        <tr><td>Minus: FHA loan payment (~$400K @ 6.5%, 30yr)</td><td>-$30,300</td><td>-$30,300</td></tr>
+        <tr><td>Minus: insurance + utilities</td><td>-$7,200</td><td>-$9,600</td></tr>
+        <tr><td>Minus: weekly cleaning crew (mandatory — all units)</td><td>-$6,200</td><td>-$7,800</td></tr>
+        <tr><td>Minus: landscaping + property maintenance (mandatory — year-round contract)</td><td>-$4,800</td><td>-$6,000</td></tr>
+        <tr><td>Minus: Furnished Finder listing fees (3 units × $199/yr)</td><td>-$600</td><td>-$600</td></tr>
+        <tr><td>Minus: property management (if hired, 10% of rental)</td><td>-$5,900</td><td>-$7,300</td></tr>
+        <tr><td>Minus: event maintenance &amp; supplies</td><td>-$1,200</td><td>-$2,800</td></tr>
+        <tr class="total-row"><td>Net Annual Cash Flow</td><td>$17,200</td><td>$49,200</td></tr>
+      </tbody>
+    </table>
+
+    <div class="info-card" style="margin-top:16px;">
+      <h3>🏥 Why Travel Nurse Revenue Is Better Than Airbnb</h3>
+      <ul>
+        <li><strong>13-week contracts</strong> — not nightly turnover. Less cleaning, less vacancy, less management.</li>
+        <li><strong>Year-round demand</strong> — hospitals need nurses in January just like July. No seasonality problem.</li>
+        <li><strong>Furnished Finder charges $0 commission</strong> — just a $199/year listing fee. Airbnb takes 15% of every booking. That's thousands more in your pocket every year.</li>
+        <li><strong>Housing stipends are guaranteed income</strong> — nurses have employer-backed housing budgets.</li>
+        <li><strong>Camp Lejeune + 2 hospitals = triple demand source</strong> — you're not relying on tourists.</li>
+      </ul>
+    </div>
+
+    <div class="info-card grant" style="margin-top:16px;">
+      <h3>🎪 Why the Venue + On-Site Lodging Combo Is a Market Gap</h3>
+      <ul>
+        <li><strong>Zero intimate venues (20-60 capacity)</strong> in Brunswick County. The Barn at Rock Creek charges $4,000–$7,200 for 150-200 guests. We serve the 20-60 person market nobody's touching — corporate retreats, promotion ceremonies, private celebrations, team off-sites, photo shoots.</li>
+        <li><strong>On-site lodging is the differentiator.</strong> No other venue can say "book the event AND house your guests on the same property." A corporate team books the courtyard for a retreat and stays on-site. A promotion celebration books Saturday and attendees sleep 50 feet away. Events run alongside active rentals — different spaces, same property, stacked revenue.</li>
+        <li><strong>Lodging bundles boost revenue per event.</strong> A $1,500 event becomes a $2,700 weekend when attendees book 1-2 available units at $200–$400/night. Events use the courtyard while rental tenants stay in their units — no conflict, stacked income.</li>
+        <li><strong>Military personnel are an underserved audience.</strong> Camp Lejeune is 4 miles away. Promotion ceremonies, homecoming celebrations, unit gatherings — intimate, meaningful events that don't fit a 200-person barn. And attendees need somewhere to stay.</li>
+        <li><strong>Rentals and events run at the same time.</strong> The courtyard is a separate space from the rental units. Nurses are on 13-week leases in the homes while events book the courtyard on weekends. Two revenue streams running simultaneously on one property.</li>
+      </ul>
+    </div>
+
+    <!-- SCENARIO B NUMBERS -->
+    <h3 style="margin:32px 0 12px;color:#2d4a3e;">Scenario B Numbers — Full 6 Units + Event Venue (5 Rentals + On-Site Manager Unit)</h3>
+    <table class="cost-table">
+      <thead><tr><th>Revenue Source</th><th>Conservative</th><th>Strong</th></tr></thead>
+      <tbody>
+        <tr><td>5 units — travel nurse / workforce @ $1,800–$2,200/mo, 11 mo/yr</td><td>$99,000</td><td>$121,000</td></tr>
+        <tr><td>Event courtyard — 20-35 intimate events/yr @ $500–$2,500</td><td>$16,000</td><td>$50,000</td></tr>
+        <tr><td>On-site lodging bundles — event attendees book available units @ $250–$400/night</td><td>$10,000</td><td>$28,000</td></tr>
+        <tr><td>Photo shoots &amp; styled sessions — 15-30/yr @ $200–$250</td><td>$3,000</td><td>$7,500</td></tr>
+        <tr><td><strong>Gross Annual Revenue</strong></td><td><strong>$128,000</strong></td><td><strong>$206,500</strong></td></tr>
+        <tr><td>Minus: commercial loan (~$650K @ 7.5%, 25yr)</td><td>-$57,000</td><td>-$57,000</td></tr>
+        <tr><td>Minus: insurance + utilities</td><td>-$12,000</td><td>-$16,000</td></tr>
+        <tr><td>Minus: weekly cleaning crew (mandatory — all units)</td><td>-$10,400</td><td>-$13,000</td></tr>
+        <tr><td>Minus: landscaping + property maintenance (mandatory — year-round contract)</td><td>-$7,200</td><td>-$9,000</td></tr>
+        <tr><td>Minus: Furnished Finder listing fees (5 units × $199/yr)</td><td>-$1,000</td><td>-$1,000</td></tr>
+        <tr><td>Minus: property management (10% of rental)</td><td>-$9,900</td><td>-$12,100</td></tr>
+        <tr><td>Minus: event maintenance, supplies, marketing</td><td>-$3,000</td><td>-$6,000</td></tr>
+        <tr class="total-row"><td>Net Annual Cash Flow</td><td>$27,500</td><td>$92,400</td></tr>
+      </tbody>
+    </table>
+
+    <h3 style="margin:32px 0 12px;color:#2d4a3e;">What the Family Earns Together</h3>
+    <table class="investor-table">
+      <thead><tr><th></th><th>Scenario A (4 units + courtyard)</th><th>Scenario B (6 units + venue)</th></tr></thead>
+      <tbody>
+        <tr><td><strong>Total family net income (conservative)</strong></td><td>$17,200/yr</td><td>$27,500/yr</td></tr>
+        <tr><td><strong>Total family net income (strong)</strong></td><td>$49,200/yr</td><td>$92,400/yr</td></tr>
+        <tr><td>Cash payback on Tianna's startup investment</td><td>1–2 years</td><td>Under 1 year (strong)</td></tr>
+        <tr class="pool-row"><td>Equity owned</td><td>Split between 2 branches based on appraised contribution</td><td>Split between 2 branches based on appraised contribution</td></tr>
+      </tbody>
+    </table>
+    <p style="font-size:.85rem;color:#888;margin-top:6px;">How the net income splits between the two family branches depends on the ownership percentages in the operating agreement — which are based on what each side contributes (land value + cash). The attorney works this out after appraisals.</p>
+
+    <div class="info-card" style="margin-top:16px;">
+      <h3>🗣️ What That Means in Plain Terms</h3>
+      <ul>
+        <li><strong>Scenario A (conservative):</strong> The family puts in land + ~$25K in cash. After all expenses — mortgage, cleaning crew, landscaping, insurance — we clear $17,200/year. Tianna's startup money comes back in about a year. After that, it's income, and the family owns 4 homes + a venue on our own land.</li>
+        <li><strong>Scenario B (strong):</strong> At full capacity, the family could clear $92,400/year. That's after every bill is paid. Tianna's startup money comes back fast, and the family owns 6 homes + an event venue.</li>
+        <li><strong>On-site team:</strong> Tianna + Anthony live rent-free — that's $1,500–$2,000/month they don't spend on housing. In return, Anthony coordinates with the cleaning crew, landscaping team, and tenants.</li>
+        <li><strong>Property protection is built in:</strong> Weekly cleaning and year-round landscaping are mandatory line items in the budget — not optional. This is family land and it will be treated that way.</li>
+        <li><strong>The venue + lodging combo:</strong> No other venue in Brunswick County can offer event space AND guest lodging on the same property. Corporate teams, military groups, and private celebrations book the courtyard and stay on-site. Events run alongside active rentals — the courtyard is separate from the rental units.</li>
+      </ul>
+    </div>
+
+    <div class="info-card" style="margin-top:16px;border-left-color:#2d4a3e;">
+      <h3>🎆 Homecoming Week — This Property Is for Us Too</h3>
+      <p>Every year during the <strong>week of July 4th — Navassa Homecoming</strong> — all units are blocked off for family use. No tenants, no bookings. Up to 6 properties for the Hooper family reunion, right on our own land, with the event courtyard set up for us. This gets written into the operating agreement and into every tenant lease. Travel nurses on 13-week contracts will know upfront that the July 4th week belongs to the family. This isn't a rental property that happens to be on family land. This is family land that happens to generate income.</p>
+    </div>
+
+    <div class="highlight">
+      <div class="label">The Recommendation</div>
+      <p>Start with Scenario A — build 4 units + event courtyard now with FHA financing. The courtyard books events from day one while working professionals fill the rentals. Prove the model, then expand to Scenario B when the rezoning is in hand.</p>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════ OUR LOTS ═══════════ -->
+<div class="section" id="lots">
+  <div class="section-header">📍 Our Family Lots</div>
+  <div class="section-body">
+    <p style="margin-bottom:20px;">Two lots on Navassa Road (same road, not adjacent). Details will be updated as we confirm with Brunswick County GIS.</p>
+
+    <div class="lot-card active">
+      <h3>Lot 1 — Scenario A Start Lot (2 units)</h3>
+      <p class="address filled">124 Navassa Road, Navassa, NC 28451</p>
+      <span class="lot-status status-confirmed">Confirmed — Clear Title</span>
+      <p style="margin-top:12px;font-size:.92rem;color:#555;">
+        <strong>Size:</strong> Confirm via Brunswick County GIS<br>
+        <strong>Planned units:</strong> 1 home (on-site family manager, owner-occupant) + 1 workforce rental<br>
+        <strong>SB 495 status:</strong> 1 primary + 1 ADU = legal without rezoning<br>
+        <strong>Owner on deed:</strong> ___________________
+      </p>
+    </div>
+
+    <div class="lot-card">
+      <h3>Lot 2 — Expansion Lot (2–4 units in Scenario B)</h3>
+      <p class="address">[Address to be added — Navassa Road]</p>
+      <span class="lot-status status-pending">Pending — Address Needed</span>
+      <p style="margin-top:12px;font-size:.92rem;color:#555;">
+        <strong>Size:</strong> ___________________<br>
+        <strong>Scenario A:</strong> 2 units (1 primary + 1 ADU) — no rezoning<br>
+        <strong>Scenario B:</strong> 4 units — requires rezoning to multi-family<br>
+        <strong>Amenities (Scenario B):</strong> Event courtyard / outdoor kitchen<br>
+        <strong>Owner on deed:</strong> ___________________
+      </p>
+    </div>
+
+    <div class="layout-diagram">
+      <h4>Site Layout — Scenario A (4 Units, No Rezoning)</h4>
+      <div class="layout-visual">
+        <div class="lot-box">
+          <h5>Lot 1 — 124 Navassa Rd (2 units)</h5>
+          <div class="unit-row">
+            <div class="unit home">On-Site Manager (Home)</div>
+            <div class="unit">Workforce Rental 1</div>
+          </div>
+          <div class="courtyard-box">Shared Green Space</div>
+        </div>
+        <div class="lot-box">
+          <h5>Lot 2 — Navassa Rd (2 units)</h5>
+          <div class="unit-row">
+            <div class="unit">Workforce Rental 2</div>
+            <div class="unit">Workforce Rental 3</div>
+          </div>
+          <div class="courtyard-box">Future Event Space (Scenario B)</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════ FAMILY INVESTMENT ═══════════ -->
+<div class="section" id="invest">
+  <div class="section-header">💵 What Each Side of the Family Brings</div>
+  <div class="section-body">
+
+    <div class="info-card">
+      <h3>💪 Here's What We're Starting With</h3>
+      <p>We're not starting from zero. Two branches of this family already own land — free and clear, no mortgage, no liens. That land is the most powerful thing we have. It's what makes the whole project possible. The bank doesn't need us to come in with a huge cash down payment — the land IS the down payment. We just need enough cash to cover the startup costs that come before the bank gets involved.</p>
+    </div>
+
+    <div class="info-card" style="border-left-color:#2d4a3e;">
+      <h3>👨‍👩‍👧 Our Family — Who's Who</h3>
+      <p style="margin-bottom:8px;">This project brings together two sides of the Hooper family. Each side brings something different, and both are essential.</p>
+      <div style="background:#f0ede8;border-radius:10px;padding:16px 20px;margin-bottom:16px;border-left:4px solid #2d4a3e;">
+        <p style="font-size:.95rem;color:#2d4a3e;margin:0;"><strong>Lillie Bell Hooper</strong> — the matriarch. Mother of Darnell. Grandmother of Tyra, Tony, and Tianna. The Navassa land came through her. LBH Properties LLC carries her initials. Every branch of this family tree grows from what she planted.</p>
+      </div>
+      <p><span class="owner-tag owner-branch1">Branch 1 — Florida</span></p>
+      <p><strong>Tyra + Tony</strong> (siblings) — Own the family homestead at 124 Navassa Road. This is the larger lot, the anchor property. Tyra leads the research and project coordination from Florida. Tony co-signs on land decisions.</p>
+      <p style="margin-top:4px;"><strong>Alicia</strong> (Tony's daughter, Wilmington NC) — Closest family member to Navassa. On all family calls, attends town meetings and hearings in person. Alicia is part of this project — her specific duties will be established alongside everyone else's.</p>
+      <p style="margin-top:12px;"><span class="owner-tag owner-branch2">Branch 2 — Connecticut + Georgia</span></p>
+      <p><strong>Darnell + Diane</strong> (married, Connecticut) — Own the smaller lot, less than a third of a mile down the road. Darnell is the uncle. Diane supports from CT.</p>
+      <p style="margin-top:4px;"><strong>Tianna + Anthony</strong> (married, Georgia → Navassa) — Tianna is Darnell and Diane's daughter. She has the liquid cash to fund startup costs AND she and Anthony are relocating to Navassa to live on-site. Tianna is the FHA borrower. Anthony is the on-site operations partner. They are the boots on the ground.</p>
+    </div>
+
+    <h3 style="margin:24px 0 12px;color:#2d4a3e;">What Each Side Contributes</h3>
+    <table class="investor-table">
+      <thead>
+        <tr><th>Who</th><th>What They Bring</th><th>Estimated Value</th></tr>
+      </thead>
+      <tbody>
+        <tr><td><span class="owner-tag owner-branch1">Tyra + Tony</span></td><td>Homestead lot (124 Navassa Rd) — larger lot, family land</td><td>$65,000 – $125,000*</td></tr>
+        <tr><td><span class="owner-tag owner-branch2">Darnell + Diane</span></td><td>Smaller lot (Navassa Rd, &lt;⅓ mile away)</td><td>$40,000 – $80,000*</td></tr>
+        <tr><td><span class="owner-tag owner-tianna">Tianna</span></td><td>Cash for startup costs (pre-loan expenses)</td><td>$20,000 – $30,000</td></tr>
+        <tr><td><span class="owner-tag owner-onsite">Tianna + Anthony</span></td><td>12-month on-site commitment — FHA borrower + property management</td><td>$18K–$24K/yr value (rent-free housing)</td></tr>
+        <tr class="pool-row"><td>Total Family Position</td><td>Land + Cash + Commitment</td><td>$125,000 – $235,000 + on-site labor</td></tr>
+      </tbody>
+    </table>
+    <p style="font-size:.85rem;color:#888;margin-top:6px;">* Land values estimated from Brunswick County median ($44K–$83K/acre). Actual values confirmed by appraisal — that's one of the first things we need to do.</p>
+    <p style="font-size:.85rem;color:#888;margin-top:4px;">Note: Tianna's cash and on-site commitment count toward Branch 2's total contribution in the operating agreement.</p>
+
+    <div class="info-card warning" style="margin-top:20px;">
+      <h3>⚠️ How Ownership Shares Get Decided</h3>
+      <p>This needs to be said plainly: ownership shares should reflect what each side actually contributes — not just split equally by default. Once both lots are appraised, the attorney calculates each branch's percentage based on land value plus any cash invested. If the homestead appraises higher than the smaller lot, Branch 1 holds a larger share. If Tianna's cash closes the gap, it evens out. <strong>The operating agreement is where this gets locked in, and everyone should agree on the formula before anyone signs.</strong> This is a conversation for the family meeting — nobody decides this alone.</p>
+    </div>
+
+    <h3 style="margin:32px 0 12px;color:#2d4a3e;">Scenario A Build Cost — 4 Workforce Tiny Homes + Event Courtyard</h3>
+    <table class="cost-table">
+      <thead><tr><th>Expense</th><th>Low</th><th>High</th></tr></thead>
+      <tbody>
+        <tr><td>4 tiny homes (400–600 sq ft, turnkey, on foundation)</td><td>$320,000</td><td>$400,000</td></tr>
+        <tr><td>Site prep — both lots (clearing, grading, driveways)</td><td>$18,000</td><td>$40,000</td></tr>
+        <tr><td>4 permanent foundations</td><td>$20,000</td><td>$40,000</td></tr>
+        <tr><td>Utility hookups — 4 homes (water, electric, sewer/septic)</td><td>$20,000</td><td>$60,000</td></tr>
+        <tr><td>Event courtyard (gravel/paver pad, string lighting, pergola, seating for 60)</td><td>$17,000</td><td>$52,000</td></tr>
+        <tr><td>Permits &amp; inspections (4 units + event area)</td><td>$9,000</td><td>$24,000</td></tr>
+        <tr><td>Legal — LLC formation, surveys, title</td><td>$5,000</td><td>$10,000</td></tr>
+        <tr><td>Insurance (builder's risk + first year + event liability)</td><td>$5,000</td><td>$10,000</td></tr>
+        <tr class="subtotal-row"><td>Total Scenario A Cost</td><td>$414,000</td><td>$636,000</td></tr>
+      </tbody>
+    </table>
+
+    <h3 style="margin:32px 0 12px;color:#2d4a3e;">How It Gets Paid — The Land Does the Heavy Lifting</h3>
+    <table class="cost-table">
+      <thead><tr><th>Funding Source</th><th>Amount</th><th>What It Covers</th></tr></thead>
+      <tbody>
+        <tr><td>Tianna's cash (startup fund)</td><td>$20,000 – $30,000</td><td>LLC updates, legal, surveys, permits, site prep, builder deposit</td></tr>
+        <tr><td>Land equity (2 family lots as collateral)</td><td>$105,000 – $205,000</td><td>Serves as down payment / borrower equity on the FHA loan</td></tr>
+        <tr><td>FHA construction loan (land-secured)</td><td>$384,000 – $606,000</td><td>Homes, foundations, utilities, courtyard, remaining build costs</td></tr>
+        <tr class="total-row"><td>Total</td><td>$414,000 – $636,000</td><td></td></tr>
+      </tbody>
+    </table>
+
+    <div class="info-card" style="margin-top:24px;border-left-color:#5a8f6e;">
+      <h3>✅ LBH Properties LLC — Named for Lillie Bell Hooper</h3>
+      <p>Good news: <strong>LBH Properties, LLC is already formed</strong> with the NC Secretary of State — named for <strong>Lillie Bell Hooper</strong>, the family matriarch whose land this project is built on. That saves formation costs and setup time. What needs to happen: confirm it's in good standing, update the registered agent and members to reflect both family branches, and file an operating agreement that spells out how ownership is split based on what each side contributes. <a href="https://www.sosnc.gov/divisions/business_registration" target="_blank" style="color:#5a8f6e;">Check status at sosnc.gov →</a></p>
+    </div>
+
+    <div class="info-card warning" style="margin-top:16px;">
+      <h3>⚠️ Important: FHA Requires a Family Member On-Site</h3>
+      <p>FHA loans require an <strong>individual borrower who will live in the property</strong> — not an LLC. Tianna commits to living on-site for at least 12 months. Here's what that means for us:</p>
+      <ul>
+        <li>Tianna is the FHA borrower and must be on the deed to the homestead lot <strong>personally</strong> — not through the LLC</li>
+        <li>The other family members participate through the <strong>LLC operating agreement</strong> (not on the loan)</li>
+        <li>Anthony handles day-to-day management — tenant coordination, event bookings, property upkeep</li>
+        <li>The LLC manages rental operations and revenue distribution across both branches</li>
+        <li>An attorney structures this so everyone is protected — expect $600–$1,500 for the operating agreement</li>
+        <li><strong>After 12 months:</strong> Tianna + Anthony can move out — but transferring to the LLC is a 2-step process:
+          <ol style="margin-top:6px;padding-left:20px;">
+            <li>Refinance the FHA loan into a conventional loan (FHA doesn't allow LLC ownership)</li>
+            <li>Then deed-transfer the property into the LLC</li>
+          </ol>
+          <strong>Cost:</strong> $5K–$10K in closing costs and fees. Tianna must qualify for the conventional loan on her own. Budget for this from the start — it's not optional if the LLC needs to own the property.
+        </li>
+      </ul>
+    </div>
+
+    <div class="info-card warning" style="margin-top:16px;border-left-color:#c0392b;background:#fff5f5;">
+      <h3>🚨 Critical Sequencing — Read This Before Anything Gets Transferred</h3>
+      <p>This tripped up the research and it's important: <strong>the homestead lot CANNOT be transferred into the LLC before the FHA loan closes.</strong> The bank needs the borrower to personally own the land they're building on. Here's the right order:</p>
+      <ol style="padding-left:20px;margin-top:8px;">
+        <li><strong>Now:</strong> Darnell and Diane's smaller lot can go into LBH Properties LLC right away — it's not being used for FHA</li>
+        <li><strong>Before FHA application:</strong> The homestead lot must be deeded to <strong>Tianna</strong> personally — she's the FHA borrower. Tyra and Tony transfer the homestead to Tianna's name for the loan period.</li>
+        <li><strong>After 12 months:</strong> Tianna refinances FHA → conventional loan, then deed-transfers the homestead lot into the LLC. Both lots are now in LBH Properties together.</li>
+      </ol>
+      <p style="margin-top:10px;">If both lots go into the LLC first, the FHA financing falls apart. The attorney needs to understand this sequence on day one. Tyra and Tony are temporarily transferring the homestead deed to Tianna for financing purposes — the operating agreement protects everyone's ownership rights during this period.</p>
+    </div>
+
+    <div style="background:#fff;border:3px solid #2d4a3e;border-radius:14px;padding:28px;margin-top:24px;">
+      <h3 style="font-size:1.15rem;color:#2d4a3e;margin-bottom:6px;">🏠 Tianna + Anthony On-Site — What This Actually Means</h3>
+      <p style="font-size:.95rem;color:#555;margin-bottom:16px;">Tianna and Anthony are relocating from Georgia to Navassa. Tianna is the FHA borrower and lives on-site for at least 12 months — that's what makes the financing work. Anthony is her operations partner on the ground. Together they manage the property, the tenants, and the event courtyard. This is a real commitment, and they deserve for everyone to understand exactly what they're signing up for:</p>
+
+      <h4 style="font-size:.95rem;color:#2d4a3e;margin:16px 0 8px;border-bottom:1px solid #e0d8cf;padding-bottom:6px;">📋 Why This Role Exists (FHA Requirement)</h4>
+      <ul style="font-size:.93rem;color:#555;padding-left:20px;">
+        <li>FHA loans won't fund investment properties — someone must <strong>live there</strong></li>
+        <li>Tianna is the named borrower on the loan (individual, not LLC)</li>
+        <li>Minimum <strong>12 months</strong> of owner-occupancy — this is a <strong>1-year commitment, not permanent</strong></li>
+        <li>This is what makes 3.5% down possible instead of 20-30% — it saves the family $50K+ in cash upfront</li>
+      </ul>
+
+      <h4 style="font-size:.95rem;color:#2d4a3e;margin:20px 0 8px;border-bottom:1px solid #e0d8cf;padding-bottom:6px;">🔧 Property Management Responsibilities</h4>
+      <ul style="font-size:.93rem;color:#555;padding-left:20px;">
+        <li><strong>Tenant coordination</strong> — greet incoming travel nurses, handle move-in/move-out, be the local point of contact</li>
+        <li><strong>Maintenance oversight</strong> — coordinate repairs, schedule lawn care, manage trash/recycling, flag issues early</li>
+        <li><strong>Unit turnover</strong> — light cleaning between tenants, check inventory of furnishings, restock supplies</li>
+        <li><strong>Vendor management</strong> — be on-site for contractor visits, inspections, utility work</li>
+      </ul>
+
+      <h4 style="font-size:.95rem;color:#2d4a3e;margin:20px 0 8px;border-bottom:1px solid #e0d8cf;padding-bottom:6px;">🎉 Event Courtyard Management</h4>
+      <ul style="font-size:.93rem;color:#555;padding-left:20px;">
+        <li><strong>Booking coordination</strong> — respond to inquiries, manage calendar, confirm reservations</li>
+        <li><strong>Day-of presence</strong> — unlock the space, set up/break down, ensure courtyard is guest-ready</li>
+        <li><strong>Lodging bundles</strong> — coordinate event attendees booking any available units; manage courtyard use alongside active rentals</li>
+        <li><strong>Vendor relations</strong> — work with caterers, florists, photographers who serve the venue</li>
+      </ul>
+
+      <h4 style="font-size:.95rem;color:#2d4a3e;margin:20px 0 8px;border-bottom:1px solid #e0d8cf;padding-bottom:6px;">💰 What They Get in Return</h4>
+      <ul style="font-size:.93rem;color:#555;padding-left:20px;">
+        <li><strong>Rent-free housing</strong> — saves $1,500–$2,000/month they'd pay somewhere else ($18K–$24K/year value)</li>
+        <li><strong>Ownership through their branch</strong> — their share comes from whichever family branch they belong to, as defined in the operating agreement</li>
+        <li><strong>Profit share</strong> — their cut of net revenue matches their branch's ownership percentage</li>
+        <li><strong>Building equity on family land</strong> — they're on the deed during the FHA period, building equity on property that appreciates</li>
+      </ul>
+
+      <h4 style="font-size:.95rem;color:#2d4a3e;margin:20px 0 8px;border-bottom:1px solid #e0d8cf;padding-bottom:6px;">🚫 What They Don't Have to Do</h4>
+      <ul style="font-size:.93rem;color:#555;padding-left:20px;">
+        <li>Heavy repairs or construction — that's hired out</li>
+        <li>Accounting, taxes, or legal — that's the LLC / Tyra's lane</li>
+        <li>Marketing or listing management — that can be shared or outsourced</li>
+        <li>Live there permanently — <strong>this is a 1-year commitment.</strong> After 12 months, the FHA requirement is met and Tianna + Anthony can move out or stay — their choice. Transferring ownership to the LLC requires Tianna to refinance to a conventional loan first ($5K–$10K in costs)</li>
+      </ul>
+
+      <div style="background:#e8f5ee;border-radius:8px;padding:16px 20px;margin-top:20px;">
+        <p style="font-size:.93rem;color:#2d4a3e;margin:0;"><strong>Bottom line:</strong> Tianna and Anthony are making a 1-year commitment — not a lifetime. They relocate to Navassa, live on-site for 12 months, and manage the property in exchange for rent-free housing and their ownership share through Branch 2. After the year, they can move out or stay — their choice. Moving the property into the LLC afterward requires Tianna to refinance to a conventional loan — budget $5K–$10K for that step.</p>
+      </div>
+
+      <div style="background:#d9f2e0;border-radius:8px;padding:16px 20px;margin-top:12px;">
+        <p style="font-size:.93rem;color:#1e7a3a;margin:0;"><strong>🏘️ Local family presence:</strong> Alicia (Tony's daughter) lives in Wilmington — about 30 minutes from Navassa. She's on all family calls, attends town meetings and hearings in person, and has her own lane in the project. Her specific duties will be established at the family meeting — she's part of this, not on the sidelines.</p>
+      </div>
+    </div>
+
+    <div class="info-card">
+      <h3>🧾 What the Startup Cash Covers (Before the Loan)</h3>
+      <p style="margin-bottom:8px;">Tianna's cash ($20K–$30K) pays for everything that has to happen before a bank will talk to us:</p>
+      <ul>
+        <li>LLC operating agreement update + legal structuring ($600–$1,500)</li>
+        <li>Land surveys on both lots ($600–$1,600)</li>
+        <li>Appraisals — both lots ($600–$1,200)</li>
+        <li>Site plans and architectural drawings ($3K–$8K)</li>
+        <li>Permit applications and fees ($8K–$15K)</li>
+        <li>Initial site clearing ($5K–$10K)</li>
+        <li><strong>Remaining cash reserve:</strong> $1K–$5K for contingencies</li>
+      </ul>
+      <p style="margin-top:8px;font-size:.9rem;color:#666;">If startup costs run higher than expected, the family discusses whether both branches contribute additional cash or whether we adjust ownership shares to reflect the extra contribution. That decision gets made together, not after the fact.</p>
+    </div>
+
+  </div>
+</div>
+
+<!-- ═══════════ GRANT STRATEGY ═══════════ -->
+<div class="section" id="grants">
+  <div class="section-header">🏛️ Grants &amp; Public Funding — What's Actually Available</div>
+  <div class="section-body">
+    <p style="margin-bottom:20px;">The research turned up three real ways to access public support. None of them are guaranteed, and none of them are handouts. They all require positioning this project as <strong>workforce housing that serves the community</strong> — which is exactly what it is.</p>
+
+    <div class="info-card grant">
+      <h3>🏆 1. CDBG Infrastructure Play (Strongest — April 16 Hearing)</h3>
+      <p><span class="glossary-term">CDBG</span> can't fund private homes. But it <strong>can</strong> fund public infrastructure — water lines, sewer extensions, road improvements, stormwater management — that benefits both the community AND makes our development feasible.</p>
+      <ul>
+        <li><strong>NC CDBG Neighborhood Revitalization grants: $950K–$5M typical</strong> (Jan 2026 awards ranged $950K–$5M across 8 communities)</li>
+        <li><a href="https://www.commerce.nc.gov/news/press-releases/2026/01/05/eight-north-carolina-communities-receive-12-million-neighborhood-revitalization-grants" target="_blank" style="color:#3b7dd8;">8 NC communities received $12M in Jan 2026 alone →</a></li>
+        <li>If Navassa Road needs water/sewer upgrades, that's a CDBG-eligible ask</li>
+        <li>Our project becomes the private investment that complements the public infrastructure</li>
+        <li><a href="https://www.commerce.nc.gov/pre-application-cdbg-notice-funding-availability-neighborhood-revitalization" target="_blank" style="color:#3b7dd8;">NC Commerce CDBG-NR Pre-Application Info →</a></li>
+      </ul>
+      <p style="margin-top:12px;"><strong>🗓️ How we approach the April 16 hearing:</strong></p>
+      <ul>
+        <li>🎯 <strong>Our position:</strong> We're a family investing private money in workforce housing for traveling nurses, first responders, and military personnel near Camp Lejeune.</li>
+        <li>🏗️ <strong>Our ask:</strong> We'd like the town to consider including Navassa Road infrastructure improvements — water, sewer, road — in the CDBG application. Our private investment complements the public infrastructure.</li>
+        <li>🤝 <strong>Our tone:</strong> Community partners, not people asking for a handout. We're bringing jobs, housing, and investment to Navassa — and infrastructure benefits everyone on the road, not just us.</li>
+        <li>🚫 <strong>What to avoid:</strong> Don't ask for money for the homes. Don't frame it as a personal project. Keep it about what the development does for the neighborhood.</li>
+      </ul>
+    </div>
+
+    <div class="info-card grant">
+      <h3>🏘️ 2. NC Workforce Housing Loan Program (<span class="glossary-term">NCHFA</span>)</h3>
+      <p>The NC Housing Finance Agency offers <strong>0% interest, 30-year deferred loans</strong> for rental developments — but there's a catch worth knowing:</p>
+      <ul>
+        <li>⚠️ <strong>WHLP is NOT a standalone loan.</strong> You can only receive WHLP funds as part of a federal Housing Credits (LIHTC) application. You don't apply for WHLP separately.</li>
+        <li>Housing Credits are competitive and typically awarded to larger affordable housing developments (50+ units). A 4-6 unit project is unlikely to win a LIHTC allocation on its own.</li>
+        <li>💡 <strong>Where this could work for us:</strong> If we partner with a developer or housing authority who is already pursuing Housing Credits in Brunswick County, our project could be included as part of a larger application.</li>
+        <li>🔎 <strong>Action step:</strong> Call NCHFA (919-877-5700) and ask: "Are there any Housing Credit developers working in Brunswick County we could partner with?" This turns a long shot into a real conversation.</li>
+        <li><a href="https://www.nchfa.com/rental-housing-partners/rental-developers/rental-development-financing-options/workforce-housing-loan-program" target="_blank" style="color:#3b7dd8;">NCHFA Workforce Housing Loan Program Details →</a></li>
+        <li><a href="https://www.nchfa.com/rental-housing-partners/rental-developers/how-do-i-apply-funding" target="_blank" style="color:#3b7dd8;">How to Apply for NCHFA Funding →</a></li>
+      </ul>
+    </div>
+
+    <div class="info-card grant">
+      <h3>🌾 3. NC Rural Transformation Grant</h3>
+      <p>NC Commerce offers up to <strong>$950K</strong> for "Resilient Neighborhoods" — affordable housing access in eligible rural communities. Brunswick County is in an eligible tier.</p>
+      <ul>
+        <li>Funds housing-related infrastructure and development</li>
+        <li>Requires alignment with community resilience and housing goals</li>
+        <li>Navassa's growth + housing shortage makes this a real fit</li>
+      </ul>
+    </div>
+
+    <div class="info-card grant">
+      <h3>🔎 4. Other Programs Worth Exploring</h3>
+      <ul>
+        <li><strong>HUD Good Neighbor Next Door:</strong> <a href="https://www.hud.gov/helping-americans/good-neighbor" target="_blank" style="color:#3b7dd8;">50% price discount</a> for teachers, law enforcement, firefighters — could attract tenants</li>
+        <li><strong>NC Opportunity Zone 2.0:</strong> Launches July 2026, nominations open. If Navassa qualifies, investors get capital gains tax deferrals</li>
+        <li><strong>USDA Section 504:</strong> Repair loans/grants up to $50K for rural housing</li>
+        <li><strong>Brunswick County Economic Development:</strong> May offer property tax incentives for housing development — contact Brunswick BID</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════ RULES & ZONING ═══════════ -->
+<div class="section" id="rules">
+  <div class="section-header">⚖️ Rules &amp; Zoning — What's Actually Legal</div>
+  <div class="section-body">
+
+    <div class="highlight">
+      <div class="label">The Law That Makes This Possible</div>
+      <p><a href="https://www.ncleg.gov/BillLookUp/2025/S495" target="_blank" style="color:#fff;text-decoration:underline;">NC Senate Bill 495</a> (effective October 2025) requires every town to allow at least one <span class="glossary-term" style="background:rgba(255,255,255,0.2);color:#fff;">ADU</span> per residential lot. Navassa can't say no to 1 primary home + 1 ADU on each lot — that gives us 4 units without rezoning.</p>
+    </div>
+
+    <div class="info-card warning">
+      <h3>⚠️ Critical: 4 Units vs. 6 Units</h3>
+      <p>SB 495 guarantees <strong>one ADU per lot = 4 units total</strong> (2 per lot). To get 6 units, the larger lot needs rezoning to multi-family or planned development. That's a 6–12 month process that requires Navassa board approval and a public hearing. <strong>Scenario A (4 units) works today. Scenario B (6 units) requires rezoning.</strong></p>
+    </div>
+
+    <div class="info-card">
+      <h3>📐 Tiny Home Requirements in NC</h3>
+      <ul>
+        <li><strong>Must be on a permanent foundation</strong> — on wheels = classified as RV, much harder to finance and permit</li>
+        <li><strong>Must meet NC Residential Building Code</strong> — same as any house</li>
+        <li><strong>Most FHA lenders require 400+ sq ft minimum</strong> — this is a lender overlay, not an FHA rule, but plan for 400–600 sq ft per unit to avoid financing complications</li>
+        <li><strong>Each livable room:</strong> minimum 70 sq ft with 7 ft ceilings</li>
+        <li><strong>ADU must be smaller</strong> than the primary home on the same lot</li>
+      </ul>
+    </div>
+
+    <div class="info-card">
+      <h3>🏗️ Building Permits We'll Need (Per Home)</h3>
+      <ul>
+        <li><strong>Building permit</strong> — with plans rated for 150 MPH wind (coastal zone)</li>
+        <li><strong>Wastewater authorization</strong> — from Brunswick County Environmental Health</li>
+        <li><strong>Separate trade permits</strong> — electrical, plumbing, mechanical (HVAC)</li>
+        <li><strong>Zoning compliance verification</strong> — confirm residential zone allows intended use</li>
+        <li><strong>Each unit needs a septic evaluation</strong> — licensed soil scientist required ($500–$1,000 per site)</li>
+      </ul>
+    </div>
+
+    <div class="info-card warning">
+      <h3>⚠️ Event Venue &amp; Short-Term Rental — Must Verify</h3>
+      <p>Running a commercial event venue on residential land likely requires a <strong>special use permit or rezoning</strong>. Short-term rentals may need a permit from the Town of Navassa. <strong>Get both answers in writing from the Planning Department before investing in event space or listing on Airbnb.</strong></p>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════ FARM PLAY ═══════════ -->
+<div class="section" id="farm">
+  <div class="section-header">🌻 Future Play — Agritourism Add-On (Phase 3)</div>
+  <div class="section-body">
+    <p style="margin-bottom:16px;">Once the housing is cash-flowing, the larger lot's open space can support a small agritourism operation. This is a <strong>Phase 3 add-on</strong> — not the core business. Here's what would actually work in coastal NC:</p>
+
+    <div class="info-card warning">
+      <h3>❌ Lavender Won't Work Here</h3>
+      <p>Navassa's humid, hot coastal climate and acidic sandy soil are the opposite of what lavender needs. Most successful NC lavender farms are in the mountains/piedmont. Trying to force lavender in Brunswick County means fighting fungal disease, importing alkaline soil amendments, and installing drainage infrastructure — expensive and high-risk for a small plot.</p>
+    </div>
+
+    <div class="info-card">
+      <h3>✅ What DOES Thrive in Coastal NC</h3>
+      <ul>
+        <li><strong>Muscadine grapes</strong> — native to the Southeast, disease-resistant, thrive in coastal plains. U-pick, wine events, and value-added products (jelly, juice). NC has a strong muscadine culture.</li>
+        <li><strong>Cut flowers</strong> — sunflowers, zinnias, dahlias all love hot, humid summers. U-pick flower farms are booming in NC. Low startup cost, quick revenue (same-season).</li>
+        <li><strong>Blueberries</strong> — perfect for acidic sandy soil (exactly what Brunswick County has). U-pick operations are popular and profitable.</li>
+      </ul>
+    </div>
+
+    <div class="info-card">
+      <h3>💲 Realistic Farm Revenue (Under 1 Acre)</h3>
+      <ul>
+        <li><strong>U-pick flowers/berries:</strong> $15,000–$40,000/year (after year 2)</li>
+        <li><strong>Value-added products:</strong> $5,000–$15,000/year (jams, bouquets, wreaths)</li>
+        <li><strong>Farm events:</strong> $5,000–$15,000/year (paired with the event courtyard)</li>
+        <li><strong>Ramp-up time:</strong> 1–2 years for flowers, 2–3 years for grapes/berries</li>
+        <li><strong>Needs:</strong> someone managing it — not passive income</li>
+      </ul>
+    </div>
+
+    <div class="highlight">
+      <div class="label">Phase 3 Recommendation</div>
+      <p>Start with cut flowers (sunflowers + zinnias) in year 2 — lowest cost, fastest revenue, most Instagram-friendly. Add muscadine grapes in year 3 as a longer-term play. Both pair naturally with the event courtyard and create a "destination" feel that boosts rental bookings.</p>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════ BUILDERS ═══════════ -->
+<div class="section" id="builders">
+  <div class="section-header">🏗️ Tiny Home Builders — 400-600 Sq Ft Workforce Units</div>
+  <div class="section-body">
+    <p style="margin-bottom:16px;">These builders specialize in high-end tiny homes on permanent foundations and deliver to NC. Units should be <strong>400+ sq ft</strong> — most FHA lenders won't finance smaller. Ordering multiple units from one builder unlocks volume discounts of 5-15%.</p>
+
+    <div class="builder-grid">
+      <div class="builder-card">
+        <h4>Timbercraft Tiny Homes</h4>
+        <div class="price">$90K – $180K</div>
+        <p>Guntersville, AL. Handcrafted, full-size appliances, hardwood floors. Drivable from NC.</p>
+      </div>
+      <div class="builder-card">
+        <h4>Tru Form Tiny</h4>
+        <div class="price">$100K – $200K+</div>
+        <p>Custom builds. Modern design, premium finishes, smart home integration.</p>
+      </div>
+      <div class="builder-card">
+        <h4>Tiny Heirloom</h4>
+        <div class="price">$130K – $250K+</div>
+        <p>Portland, OR. HGTV-featured. Full custom, spa finishes. Premium pricing.</p>
+      </div>
+      <div class="builder-card">
+        <h4>Clever Tiny Homes</h4>
+        <div class="price">$80K – $130K</div>
+        <p>Best value in quality. Spa finishes and designer interiors in the base price.</p>
+      </div>
+      <div class="builder-card">
+        <h4>Movable Roots</h4>
+        <div class="price">$100K – $175K</div>
+        <p>Melbourne, FL. Coastal-ready builds. Close to NC = lower delivery costs.</p>
+      </div>
+      <div class="builder-card">
+        <h4>Utopian Villas</h4>
+        <div class="price">$85K – $160K</div>
+        <p>Variety of floor plans. Good for multi-unit orders with volume pricing.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════ ACTION PLAN ═══════════ -->
+<div class="section" id="plan">
+  <div class="section-header">✅ Action Plan — Step by Step</div>
+  <div class="section-body">
+
+    <div class="phase">
+      <div class="phase-dot"></div>
+      <h3>🔒 Phase 1 — Lock the Foundation</h3>
+      <div class="timeframe">Now – Month 1</div>
+      <p><span class="owner-tag owner-all">All Family</span> <strong>What to do:</strong> Tyra picks up Tianna in Georgia and drives to Navassa together for the CDBG hearing April 16 (see <a href="#grants" style="color:#5a8f6e;">Grant Strategy</a> for our approach). Tyra pulls deeds from <a href="https://www.brunswickcountync.gov" target="_blank" style="color:#5a8f6e;">Brunswick County Register of Deeds</a>. Look up both lots on <a href="https://tax.brunsco.net/itsnet/BasicSearch.aspx" target="_blank" style="color:#5a8f6e;">Brunswick County GIS</a> to confirm zoning, size, and restrictions. Get land surveys ($300–$800 per lot). Tyra contacts <a href="https://townofnavassa.org" target="_blank" style="color:#5a8f6e;">Navassa Planning</a> (910-371-2432) to confirm ADU rights and ask about STR permits.</p>
+    </div>
+
+    <div class="phase">
+      <div class="phase-dot future"></div>
+      <h3>📝 Phase 2 — Legal Structure &amp; Family Agreements</h3>
+      <div class="timeframe">Month 1 – 2</div>
+      <p><span class="owner-tag owner-tyra">Tyra</span> + <span class="owner-tag owner-darnell">Darnell</span> <strong>What to do:</strong> Hire an attorney to structure the ownership — both family branches contributing land, Tianna's cash as startup, Tianna on the FHA loan, LBH Properties LLC updated with new operating agreement. The agreement spells out: ownership shares based on appraised land + cash contributions, voting rights (100% consent for major decisions), family gathering rights, Homecoming Week block, generational transfer provisions, and exit protections. ($600–$1,500 for operating agreement)</p>
+    </div>
+
+    <div class="phase">
+      <div class="phase-dot future"></div>
+      <h3>🏦 Phase 3 — Financing &amp; Builder Selection</h3>
+      <div class="timeframe">Month 2 – 4</div>
+      <p><span class="owner-tag owner-tianna">Tianna</span> + <span class="owner-tag owner-tyra">Tyra</span> <strong>What to do:</strong> Get both lots appraised. Tianna applies for FHA construction loan with the homestead lot as equity (must be in her name — not the LLC). Contact 3-4 builders for multi-unit quotes. Visit Timbercraft (AL) and Movable Roots (FL) — both drivable. Confirm units are 400+ sq ft for FHA compliance. Call <a href="https://www.nchfa.com/rental-housing-partners/rental-developers/rental-development-financing-options/workforce-housing-loan-program" target="_blank" style="color:#5a8f6e;">NCHFA</a> (919-877-5700) to ask about Housing Credit developers active in Brunswick County — our best path to WHLP funding is partnering with an existing application.</p>
+    </div>
+
+    <div class="phase">
+      <div class="phase-dot future"></div>
+      <h3>📋 Phase 4 — Permits &amp; Site Prep</h3>
+      <div class="timeframe">Month 4 – 6</div>
+      <p><span class="owner-tag owner-anthony">Anthony</span> + <span class="owner-tag owner-tyra">Tyra</span> <strong>What to do:</strong> Submit building permits to Brunswick County (150 MPH wind plans required). Get septic evaluations for all 4 sites. Anthony coordinates site access and contractor walkthroughs locally. Hire contractor for clearing, grading, foundations, driveways, and utility hookups. Lock builder contract with deposit from Tianna's startup cash.</p>
+    </div>
+
+    <div class="phase">
+      <div class="phase-dot future"></div>
+      <h3>🚚 Phase 5 — Build &amp; Deliver (Scenario A)</h3>
+      <div class="timeframe">Month 6 – 10</div>
+      <p><span class="owner-tag owner-anthony">Anthony</span> <strong>What to do:</strong> 4 homes built off-site while site work continues. Anthony is the on-site point of contact for deliveries, inspections, and punch lists. Homes delivered and placed on foundations. Utility connections. Brunswick County inspections. Certificate of Occupancy for each unit.</p>
+    </div>
+
+    <div class="phase">
+      <div class="phase-dot future"></div>
+      <h3>🚀 Phase 6 — Launch Workforce Rentals</h3>
+      <div class="timeframe">Month 10 – 12</div>
+      <p><span class="owner-tag owner-anthony">Anthony</span> + <span class="owner-tag owner-tianna">Tianna</span> <strong>What to do:</strong> Professional photos. List 3 rental units on <a href="https://www.furnishedfinder.com" target="_blank" style="color:#5a8f6e;">Furnished Finder</a>, Nomad Health, and Airbnb. Target travel nurses at <a href="https://www.nhrmc.org" target="_blank" style="color:#5a8f6e;">New Hanover Regional</a> and <a href="https://www.novanthealthbrunswickmedicalcenter.org" target="_blank" style="color:#5a8f6e;">Novant Health Brunswick</a>. Market to <a href="https://www.lejeune.marines.mil" target="_blank" style="color:#5a8f6e;">Camp Lejeune housing office</a>. Tianna + Anthony move in. Set up mandatory weekly cleaning crew and year-round landscaping contracts. Get landlord insurance + liability coverage. First tenants. First revenue.</p>
+    </div>
+
+    <div class="phase">
+      <div class="phase-dot future"></div>
+      <h3>📈 Phase 7 — Expand to Scenario B (Optional)</h3>
+      <div class="timeframe">Month 12 – 24</div>
+      <p><span class="owner-tag owner-all">All Family</span> <strong>What to do:</strong> After 12 months of proven income, pursue rezoning on the larger lot for 4 additional units. Apply for commercial construction financing backed by track record. Expand event courtyard. Begin agritourism planning (cut flowers, muscadine). Tianna refinances FHA → conventional, then deed-transfers homestead into LLC. Tianna + Anthony can optionally move out and rent all units once FHA 12-month requirement is met.</p>
+    </div>
+
+  </div>
+</div>
+
+<!-- ═══════════ PROTECT THE LAND ═══════════ -->
+<div class="section" id="protect">
+  <div class="section-header">🛡️ Protecting the Land for Future Generations</div>
+  <div class="section-body">
+    <div class="info-card">
+      <h3>🛡️ Why the LLC Matters — This Is How We Keep the Land</h3>
+      <p style="margin-bottom:10px;"><strong>LBH Properties, LLC already exists</strong> with the NC Secretary of State — named for <strong>Lillie Bell Hooper</strong>, the woman who started all of this. We update the members and operating agreement — not start from scratch. The LLC carries her name because it carries her purpose: this land stays in this family. North Carolina hasn't adopted the Uniform Partition of Heirs Property Act yet, which means family land can still be forced into sale if one heir wants out. The LLC prevents that.</p>
+      <ul>
+        <li><strong>Prevents forced sales.</strong> No one person — and no one branch — can sell to an outsider without the other branch's agreement. This requires 100% consent, not majority vote.</li>
+        <li><strong>Right of first refusal.</strong> If one branch ever wants out, the other branch gets the first right to buy their share at appraised value. No outside buyers unless the family declines.</li>
+        <li><strong>Generational transfer.</strong> Membership interests pass to heirs within the same branch. Your kids inherit your branch's share. Their kids inherit theirs. No forced buyout on death.</li>
+        <li><strong>No outside members.</strong> Nobody gets added to this LLC without unanimous consent from both branches. The land stays in the family — period.</li>
+        <li><strong>Protects personal assets.</strong> The LLC separates personal finances from property liability. If someone sues the property, they can't touch personal bank accounts, homes, or cars.</li>
+        <li><strong>Makes passing land to children simple.</strong> Transfer LLC shares instead of splitting deeds. No probate fights.</li>
+      </ul>
+      <p style="margin-top:10px;"><a href="https://www.sosnc.gov/divisions/business_registration" target="_blank" style="color:#5a8f6e;font-weight:600;">Check LBH Properties LLC status on sosnc.gov →</a></p>
+    </div>
+
+    <div class="info-card" style="border-left-color:#2d4a3e;">
+      <h3>🏡 Family Gathering Rights — Written Into the Agreement</h3>
+      <p>This isn't just an investment property. It's the family homestead. The operating agreement should include a provision that <strong>all Hooper family members retain the right to use the event courtyard and common areas for family gatherings</strong>, regardless of ownership percentage. The July 4th Homecoming Week block is part of this, but the right extends year-round for family events coordinated with the on-site manager. The attorney drafts this custom — it's not standard LLC language, and that's the point.</p>
+    </div>
+
+    <div class="info-card">
+      <h3>🌳 NC Resources for Protecting Family Land</h3>
+      <ul>
+        <li><strong>Conservation Trust for NC</strong> — Free help with land preservation (ctnc.org)</li>
+        <li><strong>NC A&T Cooperative Extension</strong> — Free legal and technical help for family landowners (ncat.edu)</li>
+        <li><strong>NC State Extension</strong> — Wills, trusts, and protecting family land (ncfarmlink.ces.ncsu.edu)</li>
+        <li><strong>USDA Rural Development NC</strong> — Loan programs and grants | 800-414-1226</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════ FAMILY MEETINGS ═══════════ -->
+<div class="section" id="meetings">
+  <div class="section-header">🤝 Family Meetings — Before April 16</div>
+  <div class="section-body">
+    <p style="margin-bottom:16px;">Two meetings to get aligned before the CDBG public hearing. Everyone should read this page before Meeting 1. These meetings are about making decisions together — not presenting a finished plan. Alicia is on all calls — she's the closest family member to Navassa and needs to be in the loop on everything.</p>
+
+    <div class="meeting-card">
+      <div class="date">Meeting 1 — Saturday April 12 or Sunday April 13, 2026 (confirm with family)</div>
+      <h3>📋 Review the Research &amp; Make the Big Decisions Together</h3>
+      <p><strong>Goal:</strong> Get both branches of the family on the same page. Walk through this site together. The big questions that need answers at this meeting:</p>
+      <p style="margin-top:10px;"><strong>Decisions to make:</strong></p>
+      <ul style="padding-left:20px;font-size:.93rem;color:#555;margin-top:6px;">
+        <li>Review the research and both scenarios together — are we going Scenario A (4 units, start now) or Scenario B (phase to 6)? (30 min)</li>
+        <li>Confirm Tianna + Anthony as the on-site team — this is the biggest individual commitment. 1 year living on-site, managing the property, Tianna as the FHA borrower. Discuss what that looks like day to day. (15 min)</li>
+        <li>How do we want ownership split? Land appraisals will set the numbers, but the family should agree on the formula now — before the attorney drafts the operating agreement. (15 min)</li>
+        <li>Confirm Tianna's startup cash amount and timeline (10 min)</li>
+        <li>Check LBH Properties LLC status — who has access? Is it in good standing? (5 min)</li>
+        <li>Confirm Homecoming Week block (July 4th week — all units reserved for family) (5 min)</li>
+        <li>Prep for April 16 hearing — who's attending? (10 min)</li>
+      </ul>
+    </div>
+
+    <div class="meeting-card">
+      <div class="date">Meeting 2 — Tuesday or Wednesday before April 16 (confirm with family)</div>
+      <h3>🎤 Hearing Prep: How We Approach April 16</h3>
+      <p><strong>Goal:</strong> Align on our approach for the CDBG hearing. Review any updates from initial research calls. Final go/no-go on scenario choice.</p>
+      <p style="margin-top:10px;"><strong>Agenda:</strong></p>
+      <ul style="padding-left:20px;font-size:.93rem;color:#555;margin-top:6px;">
+        <li>🎯 Review our approach and positioning (see <a href="#grants" style="color:#5a8f6e;">Grant Strategy</a>) (20 min)</li>
+        <li>🗣️ Walk through the 2-minute framing: "We're investing private money in workforce housing — infrastructure support benefits the whole road" (15 min)</li>
+        <li>📋 Report back on any calls made this week (Brunswick GIS, Navassa Planning, USDA) (15 min)</li>
+        <li>👥 Confirm who's attending April 16 and each person's role (10 min)</li>
+      </ul>
+    </div>
+
+    <h3 style="margin:28px 0 16px;color:#2d4a3e;">Family Lanes — Who Handles What</h3>
+    <p style="margin-bottom:16px;font-size:.93rem;color:#555;">Every task needs one owner. Assignments are based on who's best positioned — by location, expertise, or role. These get confirmed at Meeting 1.</p>
+
+    <div class="info-card" style="margin-bottom:20px;border-left-color:#2d4a3e;">
+      <h3>🗺️ Where Everyone Is</h3>
+      <p>
+        <span class="owner-tag owner-tyra">Tyra</span> + <span class="owner-tag owner-tony">Tony</span> — Florida (project lead + co-owner) &nbsp;|&nbsp;
+        <span class="owner-tag owner-alicia">Alicia</span> — Wilmington NC (Tony's daughter, closest to Navassa, local presence) &nbsp;|&nbsp;
+        <span class="owner-tag owner-darnell">Darnell</span> + <span class="owner-tag owner-diane">Diane</span> — Connecticut (lot owners + family elders) &nbsp;|&nbsp;
+        <span class="owner-tag owner-tianna">Tianna</span> + <span class="owner-tag owner-anthony">Anthony</span> — Georgia → Navassa (on-site team + cash + FHA borrower)
+      </p>
+    </div>
+
+    <table class="cost-table">
+      <thead><tr><th>Task</th><th>Owner</th><th>Deadline</th></tr></thead>
+      <tbody>
+        <tr><td colspan="3" style="background:#e8f5ee;font-weight:700;color:#2d4a3e;">🔍 Research &amp; Legal — Before Meeting 1</td></tr>
+        <tr><td>Pull deeds for both lots from Brunswick County Register of Deeds</td><td><span class="owner-tag owner-tyra">Tyra</span></td><td>By Meeting 1</td></tr>
+        <tr><td>Look up both lots on <a href="https://tax.brunsco.net/itsnet/BasicSearch.aspx" target="_blank" style="color:#5a8f6e;">Brunswick County GIS</a> — confirm size, zoning</td><td><span class="owner-tag owner-tyra">Tyra</span></td><td>By Meeting 1</td></tr>
+        <tr><td>Check LBH Properties LLC status on <a href="https://www.sosnc.gov/divisions/business_registration" target="_blank" style="color:#5a8f6e;">sosnc.gov</a> — is it current? Who's the registered agent?</td><td><span class="owner-tag owner-darnell">Darnell</span></td><td>By Meeting 1</td></tr>
+        <tr><td>Gather family land history — original deed holders, how property came to us</td><td><span class="owner-tag owner-darnell">Darnell</span> + <span class="owner-tag owner-diane">Diane</span></td><td>By Meeting 1</td></tr>
+
+        <tr><td colspan="3" style="background:#e8ecf5;font-weight:700;color:#3b5998;">📞 Calls &amp; Outreach — Before Meeting 2</td></tr>
+        <tr><td>Call <a href="https://townofnavassa.org" target="_blank" style="color:#5a8f6e;">Town of Navassa Planning</a> (910-371-2432) — ADU rules, STR permits, event venue</td><td><span class="owner-tag owner-tyra">Tyra</span></td><td>By Meeting 2</td></tr>
+        <tr><td>Call <a href="https://eligibility.sc.egov.usda.gov/eligibility/welcomeAction.do" target="_blank" style="color:#5a8f6e;">USDA</a> (800-414-1226) — check if 124 Navassa Rd qualifies as rural</td><td><span class="owner-tag owner-darnell">Darnell</span></td><td>By Meeting 2</td></tr>
+        <tr><td>Research FHA lenders in Brunswick County that do construction loans</td><td><span class="owner-tag owner-tyra">Tyra</span></td><td>By Meeting 2</td></tr>
+        <tr><td>Browse <a href="https://www.furnishedfinder.com" target="_blank" style="color:#5a8f6e;">Furnished Finder</a> — look at comparable listings in Wilmington area</td><td><span class="owner-tag owner-tianna">Tianna</span></td><td>By Meeting 2</td></tr>
+        <tr><td>Check Tianna's credit + FHA pre-qualification readiness</td><td><span class="owner-tag owner-tianna">Tianna</span></td><td>By Meeting 2</td></tr>
+
+        <tr><td colspan="3" style="background:#f0e8f5;font-weight:700;color:#6b4c8a;">🤝 Family Decisions — Meeting 1</td></tr>
+        <tr><td>Confirm Scenario A (start now) or Scenario B (phase to 6)</td><td><span class="owner-tag owner-all">Everyone</span></td><td>Meeting 1</td></tr>
+        <tr><td>Confirm Tianna + Anthony as on-site team — discuss the commitment openly</td><td><span class="owner-tag owner-all">Everyone</span></td><td>Meeting 1</td></tr>
+        <tr><td>Agree on ownership formula — appraisal-based split between branches</td><td><span class="owner-tag owner-all">Everyone</span></td><td>Meeting 1</td></tr>
+        <tr><td>Confirm Homecoming Week block (July 4th — all units for family)</td><td><span class="owner-tag owner-all">Everyone</span></td><td>Meeting 1</td></tr>
+        <tr><td>Confirm Tianna's startup cash amount and timeline</td><td><span class="owner-tag owner-tianna">Tianna</span></td><td>Meeting 1</td></tr>
+
+        <tr><td colspan="3" style="background:#fff3e0;font-weight:700;color:#b57a1b;">📅 CDBG Hearing — April 16</td></tr>
+        <tr><td>Tyra drives FL → GA to pick up Tianna, then to Navassa together</td><td><span class="owner-tag owner-tyra">Tyra</span> + <span class="owner-tag owner-tianna">Tianna</span></td><td>Apr 15-16</td></tr>
+        <tr><td>Attend CDBG hearing at Navassa Town Hall (7:30 PM)</td><td><span class="owner-tag owner-tyra">Tyra</span> + <span class="owner-tag owner-tianna">Tianna</span> + <span class="owner-tag owner-alicia">Alicia</span></td><td>Apr 16</td></tr>
+        <tr><td>Deliver the 2-minute framing (see <a href="#grants" style="color:#5a8f6e;">Grant Strategy</a>)</td><td><span class="owner-tag owner-tyra">Tyra</span></td><td>Apr 16</td></tr>
+        <tr><td>Alicia attends in person from Wilmington — local family presence</td><td><span class="owner-tag owner-alicia">Alicia</span></td><td>Apr 16</td></tr>
+        <tr><td>Darnell, Diane, Tony, Anthony — join by phone or attend if possible</td><td><span class="owner-tag owner-all">Everyone else</span></td><td>Apr 16</td></tr>
+
+        <tr><td colspan="3" style="background:#f5efe8;font-weight:700;color:#8b6914;">🏗️ Post-Hearing — Month 1-2</td></tr>
+        <tr><td>Hire NC real estate attorney — structure LLC operating agreement</td><td><span class="owner-tag owner-tyra">Tyra</span></td><td>By May 15</td></tr>
+        <tr><td>Get both lots appraised (needed for ownership split + FHA)</td><td><span class="owner-tag owner-tyra">Tyra</span> + <span class="owner-tag owner-darnell">Darnell</span></td><td>By May 30</td></tr>
+        <tr><td>Transfer homestead deed to Tianna's name (required for FHA — attorney handles)</td><td><span class="owner-tag owner-tyra">Tyra</span> + <span class="owner-tag owner-tony">Tony</span></td><td>Before FHA app</td></tr>
+        <tr><td>Tianna + Anthony begin Navassa relocation planning</td><td><span class="owner-tag owner-tianna">Tianna</span> + <span class="owner-tag owner-anthony">Anthony</span></td><td>Month 2-3</td></tr>
+        <tr><td>Contact 3-4 tiny home builders for multi-unit quotes</td><td><span class="owner-tag owner-tyra">Tyra</span></td><td>By June</td></tr>
+        <tr><td>Anthony visits builder showrooms (GA is drivable to AL and FL builders)</td><td><span class="owner-tag owner-anthony">Anthony</span></td><td>Month 2-4</td></tr>
+        <tr><td>Alicia — local family presence in Wilmington, on all calls, attends town meetings in person. Specific duties to be established at Meeting 1.</td><td><span class="owner-tag owner-alicia">Alicia</span></td><td>Ongoing</td></tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<!-- ═══════════ HOW FUNDING WORKS ═══════════ -->
+<div class="section" id="funding-explained">
+  <div class="section-header">💡 How the Money Actually Works — Plain English</div>
+  <div class="section-body">
+
+    <div class="info-card">
+      <h3>1️⃣ Tianna Puts In Startup Cash ($20K–$30K)</h3>
+      <p>This money does NOT go to a lender. It pays for the things that have to happen before any bank will talk to us: legal paperwork, land surveys, appraisals, permits, and the first round of site clearing. Think of it as "getting the project ready to show the bank." Tianna's cash contribution is credited toward Branch 2's ownership share in the operating agreement.</p>
+    </div>
+
+    <div class="info-card">
+      <h3>2️⃣ Both Families' Land Becomes the Down Payment</h3>
+      <p>When you buy a house, the bank wants you to put money down — usually 3.5% to 20% of the home's cost. We don't pay that in cash. Instead, because <strong>both branches of the family already own their lots free and clear</strong>, the bank counts the land's value as our "skin in the game." An appraiser says the combined land is worth $105K–$205K. That's our down payment. No additional cash leaves our pockets for this part.</p>
+    </div>
+
+    <div class="info-card">
+      <h3>3️⃣ The Bank Pays for Construction</h3>
+      <p>With the land as collateral, the bank gives Tianna a <span class="glossary-term">construction loan</span>. This money goes directly to the builder and contractors — not to us. The bank sends an inspector at each stage and releases money only when work is verified. When all 4 homes are built, the construction loan automatically converts into a regular mortgage (monthly payments).</p>
+    </div>
+
+    <div class="info-card">
+      <h3>4️⃣ Tenants Pay the Mortgage</h3>
+      <p>Working professionals pay $1,800–$2,200/month to live in our units. That rent covers the mortgage payment, insurance, cleaning crews, landscaping, and still leaves money for the family. The tenants are essentially paying off our loan while we build equity on our own land.</p>
+    </div>
+
+    <div class="info-card">
+      <h3>5️⃣ What the Family Owns at the End</h3>
+      <p>After the mortgage is paid off (25–30 years), the family owns 4–6 homes + an event venue on land that was already ours. No bank lien, no debt. The rental income becomes nearly pure profit. The property passes to the next generation through the LLC — no deed splits, no probate fights. And every July 4th, we come home to Navassa.</p>
+    </div>
+
+    <div class="highlight">
+      <div class="label">The Bottom Line</div>
+      <p>Family land we already own. Tianna's cash gets us started. The bank pays for construction. Tenants pay the bank back. The family keeps the property forever — and we come home every Homecoming.</p>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════ GLOSSARY ═══════════ -->
+<div class="section" id="glossary">
+  <div class="section-header">📖 What These Terms Mean — Glossary</div>
+  <div class="section-body">
+
+    <div class="info-card">
+      <h3>🏠 ADU — Accessory Dwelling Unit</h3>
+      <p>A legal term for a smaller, separate home on the same property as a main house. Our tiny homes qualify as ADUs. <a href="https://www.ncleg.gov/BillLookUp/2025/S495" target="_blank" style="color:#5a8f6e;">NC SB 495</a> says every town must allow at least one ADU per lot — they can't say no.</p>
+    </div>
+
+    <div class="info-card">
+      <h3>🏦 FHA Loan — Federal Housing Administration Loan</h3>
+      <p>A government-backed mortgage with low down payments (3.5%). The FHA doesn't give you the money — a regular bank does, but the government insures the loan, so the bank takes less risk and offers better terms. Requires an owner-occupant — one family member must live on-site for at least 12 months. That person also commits to managing the property and event bookings. <a href="https://entp.hud.gov/idapp/html/hicostlook.cfm" target="_blank" style="color:#5a8f6e;">Check FHA loan limits by county →</a></p>
+    </div>
+
+    <div class="info-card">
+      <h3>🔨 Construction Loan</h3>
+      <p>A short-term loan that pays for building the homes. Money is released in stages as construction progresses (not all at once). When the homes are done, it converts into a regular mortgage. The land serves as collateral — the bank holds a lien on the land until the loan is paid off.</p>
+    </div>
+
+    <div class="info-card">
+      <h3>🏛️ CDBG — Community Development Block Grant</h3>
+      <p>Federal money given to states, which re-grant it to towns for community improvements. The town applies, not individuals. It funds public infrastructure (roads, water, sewer), housing rehab, and economic development. At least 70% must benefit low-to-moderate income residents. <a href="https://www.commerce.nc.gov/pre-application-cdbg-notice-funding-availability-neighborhood-revitalization" target="_blank" style="color:#5a8f6e;">NC CDBG program page →</a></p>
+    </div>
+
+    <div class="info-card">
+      <h3>🛡️ LLC — Limited Liability Company</h3>
+      <p>A business structure that protects personal assets. If someone sues the property, they can only go after the LLC's assets — not your personal house, car, or bank account. Also makes it easy to split ownership, manage income, and transfer shares to the next generation. Our existing entity is <strong>LBH Properties, LLC</strong> — named for <strong>Lillie Bell Hooper</strong>, the family matriarch. <a href="https://www.sosnc.gov/divisions/business_registration" target="_blank" style="color:#5a8f6e;">NC Secretary of State business search →</a></p>
+    </div>
+
+    <div class="info-card">
+      <h3>🏘️ NCHFA — NC Housing Finance Agency</h3>
+      <p>A state agency that provides loans and tax credits for affordable and workforce housing. Their <a href="https://www.nchfa.com/rental-housing-partners/rental-developers/rental-development-financing-options/workforce-housing-loan-program" target="_blank" style="color:#5a8f6e;">Workforce Housing Loan Program</a> offers 0% interest, 30-year deferred loans — but only as part of a federal Housing Credits (LIHTC) application, not as a standalone loan. Best path for a small project: partner with a developer already pursuing Housing Credits in the county.</p>
+    </div>
+
+    <div class="info-card">
+      <h3>📜 SB 495 — Senate Bill 495</h3>
+      <p>North Carolina law passed in 2025 that requires all towns to allow at least one ADU per residential lot. Towns cannot require special zoning, extra parking, or conditional permits. Effective October 1, 2025. <a href="https://www.ncleg.gov/Sessions/2025/Bills/Senate/PDF/S495v1.pdf" target="_blank" style="color:#5a8f6e;">Read the full bill text (PDF) →</a></p>
+    </div>
+
+    <div class="info-card">
+      <h3>🔐 Collateral</h3>
+      <p>Something of value you pledge to the bank to secure a loan. If you can't pay, the bank can take the collateral. In our case, the land is the collateral — the bank knows that even if everything goes wrong, they can sell the land to get their money back. This is why owning land free and clear is so powerful.</p>
+    </div>
+
+    <div class="info-card">
+      <h3>👷 Workforce Housing</h3>
+      <p>Housing designed for working professionals who earn too much for "affordable housing" programs but still need reasonably priced options near their jobs. Traveling nurses, teachers, first responders, and military personnel are classic workforce housing tenants. Positioning as workforce housing unlocks grants and public support that vacation rentals never get.</p>
+    </div>
+
+    <div class="info-card">
+      <h3>🔍 Furnished Finder</h3>
+      <p>A platform like Airbnb but specifically for travel nurses and medical professionals looking for furnished monthly rentals. Landlords pay $199/year to list (vs. Airbnb's 15% per booking). Average stay is 90+ days. <a href="https://www.furnishedfinder.com" target="_blank" style="color:#5a8f6e;">furnishedfinder.com →</a></p>
+    </div>
+
+    <div class="info-card">
+      <h3>🗺️ Rezoning</h3>
+      <p>Changing the legal classification of a piece of land. Our lots are probably zoned "residential" (single-family). To put more than 2 units on one lot, we'd need to rezone to "multi-family" or "planned development." This requires a public hearing, town board vote, and typically takes 6–12 months. Not guaranteed.</p>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════ CONTACTS ═══════════ -->
+<div class="section" id="contacts">
+  <div class="section-header">📞 Key Contacts</div>
+  <div class="section-body">
+    <p style="margin-bottom:16px;">Tap any link to go directly to the resource. All links open in a new tab.</p>
+
+    <a class="resource-link" href="https://townofnavassa.org" target="_blank">
+      <strong>Town of Navassa — Planning &amp; Zoning</strong>
+      <span>townofnavassa.org · 910-371-2432 · Zoning, ADU rules, event permits, STR rules</span>
+    </a>
+    <a class="resource-link" href="https://www.brunswickcountync.gov/876/GIS-Maps-Data" target="_blank">
+      <strong>Brunswick County GIS — Property Lookup</strong>
+      <span>brunswickcountync.gov/gis · Lot size, zoning district, boundaries, parcel maps</span>
+    </a>
+    <a class="resource-link" href="https://tax.brunsco.net/itsnet/BasicSearch.aspx" target="_blank">
+      <strong>Brunswick County Tax/Property Search</strong>
+      <span>tax.brunsco.net · Search by address or owner name to pull parcel data</span>
+    </a>
+    <a class="resource-link" href="https://www.brunswickcountync.gov" target="_blank">
+      <strong>Brunswick County Building Inspections</strong>
+      <span>brunswickcountync.gov · Building permits, inspections, 150 MPH wind code</span>
+    </a>
+    <a class="resource-link" href="tel:9102532250">
+      <strong>Brunswick County Environmental Health</strong>
+      <span>📞 910-253-2250 · Septic approval, wastewater permits</span>
+    </a>
+    <a class="resource-link" href="https://www.sosnc.gov/divisions/business_registration" target="_blank">
+      <strong>NC Secretary of State — Business Registration</strong>
+      <span>sosnc.gov · Search LBH Properties LLC status, file updates</span>
+    </a>
+    <a class="resource-link" href="https://www.rd.usda.gov/nc" target="_blank">
+      <strong>USDA Rural Development — NC Office</strong>
+      <span>rd.usda.gov/nc · 📞 800-414-1226 · Rural eligibility, housing loan programs</span>
+    </a>
+    <a class="resource-link" href="https://eligibility.sc.egov.usda.gov/eligibility/welcomeAction.do" target="_blank">
+      <strong>USDA Rural Eligibility Map</strong>
+      <span>eligibility.sc.egov.usda.gov · Enter address to check if Navassa qualifies</span>
+    </a>
+    <a class="resource-link" href="https://www.nchfa.com/rental-housing-partners/rental-developers" target="_blank">
+      <strong>NC Housing Finance Agency — Rental Developers</strong>
+      <span>nchfa.com · Workforce Housing Loan Program (bundled with Housing Credits — call 919-877-5700 to ask about Brunswick County partners)</span>
+    </a>
+    <a class="resource-link" href="https://www.commerce.nc.gov/pre-application-cdbg-notice-funding-availability-neighborhood-revitalization" target="_blank">
+      <strong>NC Commerce — CDBG Neighborhood Revitalization</strong>
+      <span>commerce.nc.gov · Grant pre-application info, program guidelines</span>
+    </a>
+    <a class="resource-link" href="https://entp.hud.gov/idapp/html/hicostlook.cfm" target="_blank">
+      <strong>HUD FHA Loan Limits Lookup</strong>
+      <span>hud.gov · 2026 FHA limit for Brunswick County 4-unit: $1,041,138</span>
+    </a>
+    <a class="resource-link" href="https://www.ncleg.gov/BillLookUp/2025/S495" target="_blank">
+      <strong>NC Senate Bill 495 — ADU Law</strong>
+      <span>ncleg.gov · Full text of the law that guarantees ADU rights on residential lots</span>
+    </a>
+    <a class="resource-link" href="https://www.furnishedfinder.com" target="_blank">
+      <strong>Furnished Finder — Travel Nurse Housing</strong>
+      <span>furnishedfinder.com · $199/yr flat fee, $0 commission · 90+ day avg stay · Airbnb takes 15%</span>
+    </a>
+    <a class="resource-link" href="https://www.hud.gov/helping-americans/good-neighbor" target="_blank">
+      <strong>HUD Good Neighbor Next Door</strong>
+      <span>hud.gov · 50% discount on homes for teachers, LEOs, firefighters</span>
+    </a>
+    <a class="resource-link" href="https://www.lejeune.marines.mil" target="_blank">
+      <strong>Camp Lejeune — Military Housing Referrals</strong>
+      <span>lejeune.marines.mil · Off-base housing for service members &amp; contractors (4 mi from Navassa)</span>
+    </a>
+  </div>
+</div>
+
+<!-- ═══════════ FOOTER ═══════════ -->
+<div class="footer">
+  <p><strong>Secure the Foundation</strong> — Hooper Family Land Project</p>
+  <p>Navassa, North Carolina | April 2026</p>
+  <p style="margin-top:8px;">This is a living document — it gets updated as we learn more and make decisions together. Last updated April 9, 2026.</p>
+  <p style="margin-top:14px;font-style:italic;color:#777;">For Lillie Bell Hooper — the foundation we're building on.</p>
+</div>
+
+</div>
+</body>
+</html>
