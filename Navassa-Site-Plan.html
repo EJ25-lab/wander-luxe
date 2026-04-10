@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Secure the Foundation — Site Plan</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body {
+    font-family:'Inter',sans-serif;
+    background:#1a1a1a;
+    color:#e8e0d4;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    padding:30px 20px;
+    min-height:100vh;
+  }
+
+  h1 {
+    font-size:1.8rem;
+    font-weight:300;
+    letter-spacing:2px;
+    color:#c9b99a;
+    margin-bottom:4px;
+    text-transform:uppercase;
+  }
+  .subtitle {
+    font-size:.95rem;
+    color:#8a7e6e;
+    margin-bottom:6px;
+    font-weight:300;
+  }
+  .lot-info {
+    font-size:.82rem;
+    color:#6b6258;
+    margin-bottom:24px;
+    letter-spacing:.5px;
+  }
+
+  .plan-container {
+    background:#2a2a2a;
+    border-radius:16px;
+    padding:24px;
+    box-shadow: 0 20px 60px rgba(0,0,0,.5);
+    max-width:900px;
+    width:100%;
+  }
+
+  svg { width:100%; height:auto; }
+
+  .legend {
+    display:flex;
+    flex-wrap:wrap;
+    gap:16px;
+    margin-top:20px;
+    padding:16px 20px;
+    background:#222;
+    border-radius:10px;
+    justify-content:center;
+  }
+  .legend-item {
+    display:flex;
+    align-items:center;
+    gap:6px;
+    font-size:.78rem;
+    color:#9a9080;
+    letter-spacing:.3px;
+  }
+  .legend-swatch {
+    width:14px;
+    height:14px;
+    border-radius:3px;
+    flex-shrink:0;
+  }
+
+  .info-row {
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap:12px;
+    margin-top:20px;
+    max-width:900px;
+    width:100%;
+  }
+  .info-card {
+    background:#2a2a2a;
+    border-radius:10px;
+    padding:16px 18px;
+    border-left:3px solid #5a8f6e;
+  }
+  .info-card h3 {
+    font-size:.82rem;
+    font-weight:600;
+    color:#c9b99a;
+    margin-bottom:6px;
+    text-transform:uppercase;
+    letter-spacing:.5px;
+  }
+  .info-card p {
+    font-size:.82rem;
+    color:#8a7e6e;
+    line-height:1.5;
+  }
+  .info-card.accent { border-left-color:#b5854b; }
+  .info-card.blue { border-left-color:#5a7f9f; }
+
+  .note {
+    max-width:900px;
+    width:100%;
+    margin-top:20px;
+    padding:14px 18px;
+    background:#2a2a2a;
+    border-radius:10px;
+    font-size:.8rem;
+    color:#6b6258;
+    line-height:1.6;
+    text-align:center;
+  }
+</style>
+</head>
+<body>
+
+<h1>Secure the Foundation</h1>
+<p class="subtitle">124 N Navassa Rd — Homestead Lot Site Plan</p>
+<p class="lot-info">1.5 Acres · Narrow at Road, Widens at Back · Scenario A — 4 Workforce Tiny Homes + Event Courtyard</p>
+
+<div class="plan-container">
+<svg viewBox="0 0 850 920" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <pattern id="grass" width="8" height="8" patternUnits="userSpaceOnUse">
+      <rect width="8" height="8" fill="#3a4a32"/>
+      <circle cx="2" cy="3" r=".5" fill="#445a38" opacity=".5"/>
+      <circle cx="6" cy="7" r=".4" fill="#4a6340" opacity=".4"/>
+    </pattern>
+    <pattern id="gravel" width="4" height="4" patternUnits="userSpaceOnUse">
+      <rect width="4" height="4" fill="#6b6358"/>
+      <circle cx="1" cy="1" r=".6" fill="#7a7268" opacity=".6"/>
+      <circle cx="3" cy="3" r=".5" fill="#5e5850" opacity=".5"/>
+    </pattern>
+    <pattern id="courtyard-stone" width="12" height="12" patternUnits="userSpaceOnUse">
+      <rect width="12" height="12" fill="#5a5045"/>
+      <rect x="1" y="1" width="4.5" height="4.5" rx="1" fill="#665c50" opacity=".4"/>
+      <rect x="6.5" y="1" width="4.5" height="4.5" rx="1" fill="#605848" opacity=".3"/>
+      <rect x="1" y="6.5" width="4.5" height="4.5" rx="1" fill="#625a4e" opacity=".35"/>
+      <rect x="6.5" y="6.5" width="4.5" height="4.5" rx="1" fill="#685e52" opacity=".3"/>
+    </pattern>
+    <radialGradient id="canopy1" cx="50%" cy="50%">
+      <stop offset="0%" stop-color="#4a6b3a" stop-opacity=".9"/>
+      <stop offset="60%" stop-color="#3d5a30" stop-opacity=".7"/>
+      <stop offset="100%" stop-color="#2d4a22" stop-opacity=".3"/>
+    </radialGradient>
+    <radialGradient id="canopy2" cx="50%" cy="45%">
+      <stop offset="0%" stop-color="#4e7040" stop-opacity=".85"/>
+      <stop offset="55%" stop-color="#3f5e32" stop-opacity=".65"/>
+      <stop offset="100%" stop-color="#2e4e24" stop-opacity=".25"/>
+    </radialGradient>
+    <radialGradient id="canopy3" cx="48%" cy="52%">
+      <stop offset="0%" stop-color="#45663a" stop-opacity=".8"/>
+      <stop offset="50%" stop-color="#3b5830" stop-opacity=".6"/>
+      <stop offset="100%" stop-color="#2d4a22" stop-opacity=".2"/>
+    </radialGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="2" dy="3" stdDeviation="3" flood-color="#000" flood-opacity=".35"/>
+    </filter>
+    <filter id="soft-shadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="1" dy="2" stdDeviation="2" flood-color="#000" flood-opacity=".25"/>
+    </filter>
+  </defs>
+
+  <!-- ===== LOT BOUNDARY — Narrow at road (bottom), widens toward back (top) ===== -->
+  <polygon points="280,850 570,850 790,60 60,60"
+           fill="url(#grass)" stroke="#5a5040" stroke-width="2.5" stroke-dasharray="8,4"/>
+
+  <!-- Property line labels -->
+  <text x="425" y="48" text-anchor="middle" font-size="9" fill="#6b6258" font-weight="400" letter-spacing="1">BACK PROPERTY LINE — WIDEST POINT (~350 ft est.)</text>
+  <text x="425" y="868" text-anchor="middle" font-size="9" fill="#6b6258" font-weight="400" letter-spacing="1">ROAD FRONTAGE — NARROW (~150 ft est.)</text>
+
+  <!-- Side labels -->
+  <text x="155" y="460" text-anchor="middle" font-size="8" fill="#4a4030" transform="rotate(-72,155,460)" letter-spacing="1">WEST LINE</text>
+  <text x="700" y="460" text-anchor="middle" font-size="8" fill="#4a4030" transform="rotate(72,700,460)" letter-spacing="1">EAST LINE</text>
+
+  <!-- ===== NEIGHBOR WARNING — West side ===== -->
+  <rect x="220" y="710" width="36" height="56" rx="2" fill="#7a5545" opacity=".45" stroke="#a06050" stroke-width="1" stroke-dasharray="3,2"/>
+  <text x="238" y="742" text-anchor="middle" font-size="6.5" fill="#c08060" font-weight="500">NBR</text>
+  <text x="238" y="752" text-anchor="middle" font-size="5.5" fill="#a07060">HOUSE</text>
+  <line x1="256" y1="735" x2="275" y2="735" stroke="#a06050" stroke-width=".8" stroke-dasharray="2,2" opacity=".7"/>
+  <text x="230" y="780" text-anchor="middle" font-size="6" fill="#a07060" font-style="italic">Neighbor built close</text>
+  <text x="230" y="790" text-anchor="middle" font-size="6" fill="#a07060" font-style="italic">to west property line</text>
+
+  <!-- ===== EMPTY LOT NOTE — Front area ===== -->
+  <text x="380" y="740" text-anchor="middle" font-size="9" fill="#6b6258" font-style="italic">Empty lot — all new construction</text>
+
+  <!-- Road -->
+  <rect x="220" y="850" width="410" height="24" rx="2" fill="#4a4a4a"/>
+  <line x1="320" y1="862" x2="360" y2="862" stroke="#8a8a6a" stroke-width="1.5" stroke-dasharray="12,8"/>
+  <line x1="420" y1="862" x2="460" y2="862" stroke="#8a8a6a" stroke-width="1.5" stroke-dasharray="12,8"/>
+  <line x1="520" y1="862" x2="560" y2="862" stroke="#8a8a6a" stroke-width="1.5" stroke-dasharray="12,8"/>
+  <text x="425" y="866" text-anchor="middle" font-size="9" fill="#aaa" font-weight="500">N NAVASSA RD</text>
+
+  <!-- Setback lines (dashed, subtle) -->
+  <polygon points="298,820 555,820 770,86 80,86"
+           fill="none" stroke="#5a5040" stroke-width=".7" stroke-dasharray="3,5" opacity=".5"/>
+  <text x="425" y="100" text-anchor="middle" font-size="7" fill="#5a5040" font-style="italic">Setback envelope (25ft front · 10ft side · 25ft rear)</text>
+
+  <!-- ===== FRONT OPEN AREA — Lot is empty, all new construction ===== -->
+  <!-- Tianna + Anthony live in Unit 1 (one of the 4 new tiny homes) -->
+
+  <!-- ===== DRIVEWAY — Enters from EAST side of frontage, runs up east side ===== -->
+  <!-- Entry from road on the east/right side — away from west neighbor -->
+  <path d="M 510,850 Q 515,810 520,770 Q 530,720 540,660 Q 545,600 545,540 Q 540,480 530,420 Q 520,370 510,320 Q 505,290 500,260"
+        fill="none" stroke="#7a7060" stroke-width="24" stroke-linecap="round" opacity=".6"/>
+
+  <!-- Driveway curves west into parking court at the back -->
+  <path d="M 500,260 Q 470,230 420,220 Q 370,220 330,240"
+        fill="none" stroke="#7a7060" stroke-width="20" stroke-linecap="round" opacity=".55"/>
+
+  <!-- No house spur needed — lot is empty -->
+
+  <!-- Parking court — centered in the wide back area -->
+  <ellipse cx="420" cy="240" rx="100" ry="38" fill="#635a4e" opacity=".55"/>
+  <text x="420" y="236" text-anchor="middle" font-size="9" fill="#a09080" font-weight="500">PARKING COURT</text>
+  <text x="420" y="250" text-anchor="middle" font-size="7.5" fill="#8a7a6a">6-8 spaces · turnaround</text>
+
+  <!-- ===== HEAVY TREE COVER — Lot is densely wooded per satellite ===== -->
+
+  <!-- Big live oaks in the center/mid section (the ones from the photos) -->
+  <ellipse cx="380" cy="480" rx="70" ry="62" fill="url(#canopy1)" opacity=".8"/>
+  <ellipse cx="380" cy="480" rx="48" ry="42" fill="#4a6b3a" opacity=".3"/>
+  <circle cx="380" cy="480" r="5.5" fill="#5a4a30" stroke="#3a2a18" stroke-width="1.5"/>
+
+  <ellipse cx="300" cy="550" rx="55" ry="48" fill="url(#canopy2)" opacity=".75"/>
+  <ellipse cx="300" cy="550" rx="36" ry="30" fill="#4e7040" opacity=".25"/>
+  <circle cx="300" cy="550" r="4.5" fill="#5a4a30" stroke="#3a2a18" stroke-width="1.5"/>
+
+  <ellipse cx="460" cy="520" rx="48" ry="42" fill="url(#canopy3)" opacity=".7"/>
+  <circle cx="460" cy="520" r="4" fill="#5a4a30" stroke="#3a2a18" stroke-width="1.5"/>
+
+  <ellipse cx="350" cy="420" rx="40" ry="35" fill="url(#canopy2)" opacity=".65"/>
+  <circle cx="350" cy="420" r="3.5" fill="#5a4a30" stroke="#3a2a18" stroke-width="1.5"/>
+
+  <!-- Scattered trees along west side -->
+  <ellipse cx="200" cy="460" rx="30" ry="26" fill="url(#canopy1)" opacity=".5"/>
+  <circle cx="200" cy="460" r="3" fill="#5a4a30" stroke="#3a2a18" stroke-width="1"/>
+  <ellipse cx="180" cy="360" rx="25" ry="22" fill="url(#canopy3)" opacity=".45"/>
+  <circle cx="180" cy="360" r="2.5" fill="#5a4a30" stroke="#3a2a18" stroke-width="1"/>
+  <ellipse cx="220" cy="300" rx="28" ry="24" fill="url(#canopy2)" opacity=".4"/>
+
+  <!-- Trees along east side (driveway threads through these) -->
+  <ellipse cx="620" cy="440" rx="32" ry="28" fill="url(#canopy1)" opacity=".45"/>
+  <circle cx="620" cy="440" r="3" fill="#5a4a30" stroke="#3a2a18" stroke-width="1"/>
+  <ellipse cx="640" cy="350" rx="28" ry="24" fill="url(#canopy3)" opacity=".4"/>
+  <ellipse cx="610" cy="540" rx="26" ry="22" fill="url(#canopy2)" opacity=".4"/>
+
+  <!-- Dense treeline along back edges -->
+  <ellipse cx="150" cy="140" rx="32" ry="28" fill="#3d5a30" opacity=".5"/>
+  <ellipse cx="220" cy="110" rx="28" ry="24" fill="#3d5a30" opacity=".45"/>
+  <ellipse cx="300" cy="100" rx="24" ry="20" fill="#3d5a30" opacity=".4"/>
+  <ellipse cx="540" cy="110" rx="26" ry="22" fill="#3d5a30" opacity=".45"/>
+  <ellipse cx="650" cy="120" rx="30" ry="26" fill="#3d5a30" opacity=".5"/>
+  <ellipse cx="720" cy="100" rx="24" ry="22" fill="#3d5a30" opacity=".4"/>
+  <ellipse cx="110" cy="220" rx="22" ry="20" fill="#3d5a30" opacity=".4"/>
+  <ellipse cx="730" cy="210" rx="24" ry="20" fill="#3d5a30" opacity=".4"/>
+
+  <!-- Mid-lot scattered smaller trees -->
+  <ellipse cx="440" cy="620" rx="22" ry="18" fill="url(#canopy3)" opacity=".45"/>
+  <ellipse cx="320" cy="640" rx="18" ry="16" fill="url(#canopy1)" opacity=".4"/>
+  <ellipse cx="480" cy="390" rx="20" ry="18" fill="url(#canopy2)" opacity=".35"/>
+
+  <!-- ===== EVENT COURTYARD — Under the oaks, center of the lot ===== -->
+  <rect x="330" y="490" width="150" height="90" rx="10" fill="url(#courtyard-stone)" opacity=".5" stroke="#8a7a60" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <text x="405" y="526" text-anchor="middle" font-size="10.5" fill="#c9b99a" font-weight="600">EVENT COURTYARD</text>
+  <text x="405" y="542" text-anchor="middle" font-size="7.5" fill="#9a8a70">20-60 guests · Under the oaks</text>
+  <text x="405" y="555" text-anchor="middle" font-size="6.5" fill="#8a7a60" font-style="italic">String lights · Natural shade</text>
+  <path d="M 345,498 Q 375,492 405,498 Q 435,492 465,498" fill="none" stroke="#c9b99a" stroke-width=".6" opacity=".6"/>
+  <circle cx="360" cy="495" r="1.5" fill="#e8d8a0" opacity=".7"/>
+  <circle cx="405" cy="499" r="1.5" fill="#e8d8a0" opacity=".7"/>
+  <circle cx="450" cy="495" r="1.5" fill="#e8d8a0" opacity=".7"/>
+
+  <!-- ===== TINY HOMES — In the wide back section, flanking parking court ===== -->
+
+  <!-- UNIT 1 — West side -->
+  <rect x="140" y="290" width="85" height="50" rx="4" fill="#5a8f6e" filter="url(#soft-shadow)"/>
+  <rect x="143" y="293" width="79" height="44" rx="2" fill="#6a9f7e"/>
+  <text x="182" y="314" text-anchor="middle" font-size="9.5" fill="#1a3020" font-weight="700">UNIT 1</text>
+  <text x="182" y="328" text-anchor="middle" font-size="7" fill="#2a4030">480 sqft · On-Site</text>
+  <rect x="215" y="310" width="5" height="12" rx="1" fill="#4a7a5e"/>
+
+  <!-- UNIT 2 — West side, further back -->
+  <rect x="110" y="170" width="85" height="50" rx="4" fill="#5a8f6e" filter="url(#soft-shadow)"/>
+  <rect x="113" y="173" width="79" height="44" rx="2" fill="#6a9f7e"/>
+  <text x="152" y="194" text-anchor="middle" font-size="9.5" fill="#1a3020" font-weight="700">UNIT 2</text>
+  <text x="152" y="208" text-anchor="middle" font-size="7" fill="#2a4030">480 sqft · Rental</text>
+  <rect x="185" y="190" width="5" height="12" rx="1" fill="#4a7a5e"/>
+
+  <!-- UNIT 3 — East side -->
+  <rect x="620" y="290" width="85" height="50" rx="4" fill="#5a8f6e" filter="url(#soft-shadow)"/>
+  <rect x="623" y="293" width="79" height="44" rx="2" fill="#6a9f7e"/>
+  <text x="662" y="314" text-anchor="middle" font-size="9.5" fill="#1a3020" font-weight="700">UNIT 3</text>
+  <text x="662" y="328" text-anchor="middle" font-size="7" fill="#2a4030">480 sqft · Rental</text>
+  <rect x="620" y="310" width="5" height="12" rx="1" fill="#4a7a5e"/>
+
+  <!-- UNIT 4 — East side, further back -->
+  <rect x="650" y="170" width="85" height="50" rx="4" fill="#5a8f6e" filter="url(#soft-shadow)"/>
+  <rect x="653" y="173" width="79" height="44" rx="2" fill="#6a9f7e"/>
+  <text x="692" y="194" text-anchor="middle" font-size="9.5" fill="#1a3020" font-weight="700">UNIT 4</text>
+  <text x="692" y="208" text-anchor="middle" font-size="7" fill="#2a4030">480 sqft · Rental</text>
+  <rect x="650" y="190" width="5" height="12" rx="1" fill="#4a7a5e"/>
+
+  <!-- ===== SEPTIC FIELD — Back east corner ===== -->
+  <rect x="580" y="90" width="140" height="65" rx="6" fill="#3a4a32" stroke="#5a6a50" stroke-width="1" stroke-dasharray="3,3" opacity=".6"/>
+  <text x="650" y="120" text-anchor="middle" font-size="8.5" fill="#6a7a60">SEPTIC FIELD</text>
+  <text x="650" y="133" text-anchor="middle" font-size="7" fill="#5a6a50">Drain field area</text>
+
+  <!-- ===== UTILITY CONNECTION — Near road, east side ===== -->
+  <rect x="480" y="770" width="70" height="45" rx="4" fill="#3a3a3a" stroke="#5a5a5a" stroke-width="1" stroke-dasharray="3,3" opacity=".5"/>
+  <text x="515" y="790" text-anchor="middle" font-size="7.5" fill="#7a7a7a">UTILITIES</text>
+  <text x="515" y="800" text-anchor="middle" font-size="6.5" fill="#6a6a6a">Electric · Water</text>
+
+  <!-- ===== FUTURE EXPANSION AREA — Back west corner ===== -->
+  <rect x="90" y="90" width="170" height="65" rx="6" fill="none" stroke="#5a7f9f" stroke-width="1.5" stroke-dasharray="6,4" opacity=".5"/>
+  <text x="175" y="120" text-anchor="middle" font-size="8" fill="#5a7f9f">FUTURE EXPANSION</text>
+  <text x="175" y="133" text-anchor="middle" font-size="7" fill="#4a6f8f" font-style="italic">Scenario B add'l units</text>
+
+  <!-- ===== Walking paths ===== -->
+  <!-- From parking to west units -->
+  <path d="M 330,250 Q 280,270 230,285 Q 200,295 185,295"
+        fill="none" stroke="#8a8060" stroke-width="2" stroke-dasharray="3,4" opacity=".4"/>
+  <!-- From parking to east units -->
+  <path d="M 510,250 Q 560,270 600,285 Q 620,295 625,300"
+        fill="none" stroke="#8a8060" stroke-width="2" stroke-dasharray="3,4" opacity=".4"/>
+  <!-- From parking to courtyard -->
+  <path d="M 420,278 Q 415,340 410,400 Q 405,450 405,490"
+        fill="none" stroke="#8a8060" stroke-width="2" stroke-dasharray="3,4" opacity=".4"/>
+  <!-- Open front area — no existing house -->
+
+  <!-- ===== North arrow ===== -->
+  <g transform="translate(800, 80)">
+    <circle cx="0" cy="0" r="20" fill="#2a2a2a" stroke="#5a5040" stroke-width="1"/>
+    <polygon points="0,-15 -5.5,5 0,-1 5.5,5" fill="#c9b99a"/>
+    <text x="0" y="13" text-anchor="middle" font-size="8" fill="#8a7a60" font-weight="600">N</text>
+  </g>
+
+  <!-- Scale bar -->
+  <g transform="translate(290, 900)">
+    <line x1="0" y1="0" x2="120" y2="0" stroke="#8a7a60" stroke-width="1.5"/>
+    <line x1="0" y1="-4" x2="0" y2="4" stroke="#8a7a60" stroke-width="1.5"/>
+    <line x1="60" y1="-3" x2="60" y2="3" stroke="#8a7a60" stroke-width="1"/>
+    <line x1="120" y1="-4" x2="120" y2="4" stroke="#8a7a60" stroke-width="1.5"/>
+    <text x="0" y="12" text-anchor="middle" font-size="7" fill="#6b6258">0</text>
+    <text x="60" y="12" text-anchor="middle" font-size="7" fill="#6b6258">~75 ft</text>
+    <text x="120" y="12" text-anchor="middle" font-size="7" fill="#6b6258">~150 ft</text>
+  </g>
+
+  <!-- Homecoming callout -->
+  <rect x="310" y="610" width="180" height="26" rx="13" fill="#2d4a3e" opacity=".85"/>
+  <text x="400" y="627" text-anchor="middle" font-size="8.5" fill="#c9b99a" font-weight="500">🎆 Homecoming Week — All Ours</text>
+
+  <!-- Width annotations -->
+  <line x1="280" y1="845" x2="570" y2="845" stroke="#c9b99a" stroke-width=".8" opacity=".5"/>
+  <text x="425" y="842" text-anchor="middle" font-size="7.5" fill="#c9b99a" opacity=".7">~150 ft frontage</text>
+
+  <line x1="60" y1="65" x2="790" y2="65" stroke="#c9b99a" stroke-width=".8" opacity=".5"/>
+  <text x="425" y="78" text-anchor="middle" font-size="7.5" fill="#c9b99a" opacity=".7">~350 ft at widest</text>
+
+  <!-- Depth annotation -->
+  <line x1="820" y1="60" x2="820" y2="850" stroke="#c9b99a" stroke-width=".8" opacity=".4"/>
+  <text x="835" y="460" text-anchor="middle" font-size="7.5" fill="#c9b99a" opacity=".6" transform="rotate(90,835,460)">~380 ft deep (est.)</text>
+
+  <!-- Driveway label -->
+  <text x="565" y="650" text-anchor="start" font-size="7" fill="#9a8a70" transform="rotate(85,565,650)" letter-spacing=".5">GRAVEL DRIVE (EAST SIDE)</text>
+
+</svg>
+
+<!-- Legend -->
+<div class="legend">
+  <div class="legend-item"><div class="legend-swatch" style="background:#6a9f7e;"></div> Tiny Homes (480 sqft each)</div>
+  <div class="legend-item"><div class="legend-swatch" style="background:#9a8872;"></div> Existing Ranch House</div>
+  <div class="legend-item"><div class="legend-swatch" style="background:#5a5045;"></div> Event Courtyard</div>
+  <div class="legend-item"><div class="legend-swatch" style="background:#4a6b3a; border-radius:50%;"></div> Live Oak Canopy</div>
+  <div class="legend-item"><div class="legend-swatch" style="background:#7a7060;"></div> Gravel Drive / Parking</div>
+  <div class="legend-item"><div class="legend-swatch" style="background:none; border:1.5px dashed #5a7f9f;"></div> Future Expansion (Scenario B)</div>
+</div>
+</div>
+
+<!-- Info Cards -->
+<div class="info-row">
+  <div class="info-card">
+    <h3>Driveway on the East Side</h3>
+    <p>The neighbor built close to the west property line. Driveway enters from the east (right) side of the frontage and runs up to the parking court in the back — stays clear of the neighbor's structure entirely.</p>
+  </div>
+  <div class="info-card accent">
+    <h3>Empty Lot — All New Construction</h3>
+    <p>The lot is empty — no existing structure to work around. All 4 tiny homes are new construction in the wide back section. Tianna + Anthony live in Unit 1 as the FHA owner-occupant. The front of the lot stays open with room for future landscaping or a fifth unit down the road.</p>
+  </div>
+  <div class="info-card blue">
+    <h3>Dense Tree Cover Preserved</h3>
+    <p>The lot is heavily wooded — big live oaks in the center, dense canopy throughout. Units and parking go in the wide back section. The courtyard sits under the oaks. Driveway threads up the east side where there's natural clearance.</p>
+  </div>
+  <div class="info-card">
+    <h3>Confirm with Survey</h3>
+    <p>This layout uses Zillow (1.5 acres), your photos, and your description of the lot shape and neighbor position. The land survey gives exact boundaries and confirms where the neighbor's structure falls relative to your line.</p>
+  </div>
+</div>
+
+<div class="note">
+  Conceptual site plan · 124 N Navassa Rd, Leland NC 28451 · 1.5 acres · Empty lot — all new construction · Lot narrows at road, widens toward back · Driveway routed east side — neighbor close to west property line · Dense tree cover per satellite · Final placement requires land survey, septic evaluation, and Brunswick County permit review
+</div>
+
+</body>
+</html>
